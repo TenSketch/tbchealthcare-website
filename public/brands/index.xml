@@ -36,12 +36,5 @@
       <guid>https://example.org/brands/schulke/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Accessories</title>
-      <link>https://example.org/brands/accessories/</link>
-      <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>https://example.org/brands/accessories/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

@@ -3,28 +3,44 @@
   {{ $dateHuman := .Date | time.Format ":date_long" }}
   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
   <p class="text-end">Today: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></p>
-  {{ if eq .Params.layout "enquiry" }}
-  <section class="enquiry-form">
 
-    <h1 class="text-center">{{ .Title }}</h1>
-    {{ .Content }}
-    <div class="row justify-content-between my-5">
-      {{ range sort .Site.Taxonomies.tags.brands.Pages "Weight" }}
-      <div class="col-md-2 card brand-card p-3 text-center">
-        <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo">
-        <!-- <div class="card-body">
-          <h5 class="card-title">{{ .Title }}</h5>
-          <p class="card-text">{{ .Params.description }}</p>
-          <div class="d-flex justify-content-center">
-            <a href="{{ .Permalink }}" class="btn btn-tertiary">Read more</a>
-          </div>
-        </div> -->
+  <!-- about-us page -->
+  {{ if eq .Params.layout "about" }}
+  <section class="mission">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 me-auto">
+          {{ .Content }}
+        </div>
       </div>
-      {{ end }}
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="/images/enquiry-form.jpg" alt="enquiry-form img">
+  </section>
+  <section class="management-section my-5">
+    <h2 class="mb-4">Our Management</h2>
+
+    {{ range .Params.management }}
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4">
+        <img src="{{ .img }}" class="img-fluid rounded" alt="{{ .name }}">
+      </div>
+      <div class="col-md-8">
+        <h3>{{ .name }} - <em>{{ .role }}</em></h3>
+        <p>{{ .about }}</p>
+      </div>
+    </div>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
+  <!-- contact-us page -->
+  {{ if eq .Params.layout "contact" }}
+  <section class="contact-form">
+    <h1 class="text-center mb-5">{{ .Params.sectionTitle }}</h1>
+    <div class="row justify-content-between">
+      <div class="col-md-5">
+        <h5 class="mb-4"> {{ .Content }}</h5>
+        <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
       </div>
       <div class="col-md-6">
         <form>
@@ -41,7 +57,65 @@
           <!-- Mobile Number -->
           <div class="mb-3">
             <label for="mobile" class="form-label">Mobile Number</label>
-            <input type="text" class="form-control" id="mobile" required>
+            <input type="tel" class="form-control" id="mobile" required>
+          </div>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+          </div>
+          <!-- Send Enquiry Button -->
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- enquiry page -->
+  {{ if eq .Params.layout "enquiry" }}
+  <section class="enquiry-form">
+    <h1 class="text-center mb-5">{{ .Params.sectionTitle }}</h1>
+   
+    <div class="row justify-content-between my-5">
+      {{ range sort .Site.Taxonomies.tags.brands.Pages "Weight" }}
+      <div class="col-md-3 card brand-card p-3 my-3 my-md-0 text-center">
+        <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo">
+        <!-- <div class="card-body">
+          <h5 class="card-title">{{ .Title }}</h5>
+          <p class="card-text">{{ .Params.description }}</p>
+          <div class="d-flex justify-content-center">
+            <a href="{{ .Permalink }}" class="btn btn-tertiary">Read more</a>
+          </div>
+        </div> -->
+      </div>
+      {{ end }}
+    </div>
+    <div class="row justify-content-between pt-5">
+      <div class="col-md-5">
+        <h5 class="mb-4"> {{ .Content }}</h5>
+        <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
+      </div>
+      <div class="col-md-6">
+        <form>
+          <!-- First Name -->
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <!-- Last Name -->
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+          <!-- Mobile Number -->
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="mobile" required>
           </div>
           <!-- Email -->
           <div class="mb-3">
@@ -102,6 +176,13 @@
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
               <!-- More quantities as needed -->
             </select>
           </div>
@@ -115,83 +196,73 @@
         </form>
       </div>
     </div>
-    {{ end }}
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Products based on brand selection
+      const productsByBrand = {
+        'Baxter': ['Continuous Ambulatory Peritoneal Dialysis (CAPD)'],
+        'Fresenius': [
+          '4008A Hemodialysis Machine',
+          '4008S Next Generation Hemodialysis Machine',
+          '5008S Hemodialysis Machine',
+          'AquaB Central Reverse Osmosis Water Treatment System',
+          'AquaWTU Compact Water Treatment System',
+          'Bibag® – Dry Bicarbonate Concentrate',
+          'Blood Tubing',
+          'FX-class High-Flux Dialysers and Haemofilters',
+          'PlasmaFlux® PSu filters - P1dry/P2dry'
+        ],
+        'Johnson': [
+          'CIDEX SOLUTION',
+          'ETHICON SUTURES',
+          'ETHICON CUTTER',
+          'Proximate Skin Staplers',
+          'ETHICON PROLENE MESH'
+        ],
+        'Schulke': [
+          'MICROSHIELD® 4 Chlorhexidine Surgical Handwash',
+          'Microshield® 2 Chlorhexidine Skin Cleanser',
+          'MICROSHIELD® Handrub Solution',
+          'Microshield® Blue Handrub',
+          'Microshield® Ioprep',
+          'MICROSHIELD® Tincture',
+          'Microshield® PVP-S',
+          'Microshield® PVP Povidone-Iodine Surgical Handwash'
+        ],
+        'Accessories': [
+          'CATHETER -MAHURKHAR',
+          'MULTILUMEN CATHETER',
+          'AVF NEEDLE',
+          'TRANSDUCER PROTECTOR',
+          'Dressing Kit',
+          'Maxid chronic catheter',
+          'Tal Palindrome chronic catheter'
+        ]
+      };
+
+      const brandSelect = document.getElementById('brand');
+      const productsSelect = document.getElementById('products');
+
+      brandSelect.addEventListener('change', function () {
+        const selectedBrand = brandSelect.value;
+        const products = productsByBrand[selectedBrand] || [];
+        productsSelect.innerHTML = ''; // Clear existing options
+
+        products.forEach(function (product) {
+          const option = document.createElement('option');
+          option.value = product;
+          option.text = product;
+          productsSelect.appendChild(option);
+        });
+      });
+    });
+  </script>
+  {{ end }}
+
+
 </div>
 
-<script>
-  // Fetch city and state data from external JSON file
-  $(document).ready(function () {
-    $.getJSON('cities.json', function (data) {
-      const cityStateMap = data.cities;
-      const cityInput = $('#city');
-      const stateInput = $('#state');
-      const cityDataList = $('#cities');
-
-      // Populate datalist options with cities
-      cityStateMap.forEach(cityObj => {
-        cityDataList.append(new Option(cityObj.city, cityObj.city));
-      });
-
-      // Auto-fill state based on selected city
-      cityInput.on('input', function () {
-        const selectedCity = $(this).val();
-        const cityMatch = cityStateMap.find(cityObj => cityObj.city.toLowerCase() === selectedCity.toLowerCase());
-        stateInput.val(cityMatch ? cityMatch.state : '');
-      });
-    });
-
-    // Populate products based on brand selection
-    const productsByBrand = {
-      'Fresenius': [
-        '4008A Hemodialysis Machine',
-        '4008S Next Generation Hemodialysis Machine',
-        '5008S Hemodialysis Machine',
-        'AquaB Central Reverse Osmosis Water Treatment System',
-        'AquaWTU Compact Water Treatment System',
-        'Bibag® – Dry Bicarbonate Concentrate',
-        'Blood Tubing',
-        'FX-class High-Flux Dialysers and Haemofilters',
-        'PlasmaFlux® PSu filters - P1dry/P2dry'
-      ],
-      'Johnson': [
-        'CIDEX SOLUTION',
-        'ETHICON SUTURES',
-        'ETHICON CUTTER',
-        'Proximate Skin Staplers',
-        'ETHICON PROLENE MESH'
-      ],
-      'Schulke': [
-        'MICROSHIELD® 4 Chlorhexidine Surgical Handwash',
-        'Microshield® 2 Chlorhexidine Skin Cleanser',
-        'MICROSHIELD® Handrub Solution',
-        'Microshield® Blue Handrub',
-        'Microshield® Ioprep',
-        'MICROSHIELD® Tincture',
-        'Microshield® PVP-S',
-        'Microshield® PVP Povidone-Iodine Surgical Handwash'
-      ],
-      'Accessories': [
-        'CATHETER -MAHURKHAR',
-        'MULTILUMEN CATHETER',
-        'AVF NEEDLE',
-        'TRANSDUCER PROTECTOR',
-        'Dressing Kit',
-        'Maxid chronic catheter',
-        'Tal Palindrome chronic catheter'
-      ]
-    };
-
-    $('#brand').on('change', function () {
-      const selectedBrand = $(this).val();
-      const products = productsByBrand[selectedBrand] || [];
-      $('#products').empty();
-      products.forEach(function (product) {
-        $('#products').append(new Option(product, product));
-      });
-    });
-  });
-</script>
 
 <!-- {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} -->
 {{ end }}

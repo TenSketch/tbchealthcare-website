@@ -14,8 +14,14 @@
     <loc>https://example.org/brands/schulke/</loc>
     <lastmod>2024-08-28T19:07:29+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/brands/accessories/</loc>
+    <loc>https://example.org/products/accessories/</loc>
     <lastmod>2024-08-28T19:07:29+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/about-us/</loc>
+    <lastmod>2024-09-06T20:40:28+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/contact-us/</loc>
+    <lastmod>2024-09-01T18:55:13+05:30</lastmod>
   </url><url>
     <loc>https://example.org/enquiry/</loc>
     <lastmod>2024-09-01T18:55:13+05:30</lastmod>
@@ -28,6 +34,9 @@
   </url><url>
     <loc>https://example.org/tags/</loc>
     <lastmod>2024-08-29T22:21:44+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/products/</loc>
+    <lastmod>2024-08-28T19:07:29+05:30</lastmod>
   </url><url>
     <loc>https://example.org/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>

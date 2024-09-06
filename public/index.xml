@@ -6,7 +6,7 @@
     <description>Recent content in Home on TBC Healthcare - Excellence in Healthcare Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Sep 2024 18:55:13 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 06 Sep 2024 20:40:28 +0530</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Baxter</title>
@@ -38,17 +38,31 @@
     </item>
     <item>
       <title>Accessories</title>
-      <link>https://example.org/brands/accessories/</link>
+      <link>https://example.org/products/accessories/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>https://example.org/brands/accessories/</guid>
+      <guid>https://example.org/products/accessories/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>https://example.org/about-us/</link>
+      <pubDate>Fri, 06 Sep 2024 20:40:28 +0530</pubDate>
+      <guid>https://example.org/about-us/</guid>
+      <description>Mission Ensure quicker access to consumable supplies for dialysis treatment centers. Establish faster connections to the southern Tamil Nadu region. Implement a professional approach to logistics with SMS facility and SAP ERP integration. Maintain a direct connection with customers. </description>
+    </item>
+    <item>
+      <title>Contact-us</title>
+      <link>https://example.org/contact-us/</link>
+      <pubDate>Sun, 01 Sep 2024 18:55:13 +0530</pubDate>
+      <guid>https://example.org/contact-us/</guid>
+      <description>We&amp;rsquo;d love to hear from you! Whether you have a question, need a quote, or just want to chat about your next big idea, we&amp;rsquo;re here to help. Drop us a message, and let&amp;rsquo;s make something amazing happen!</description>
     </item>
     <item>
       <title>Enquiry form</title>
       <link>https://example.org/enquiry/</link>
       <pubDate>Sun, 01 Sep 2024 18:55:13 +0530</pubDate>
       <guid>https://example.org/enquiry/</guid>
-      <description></description>
+      <description>Let us know how we can assist you. Fill in your details and select the products or services you’re interested in. We&amp;rsquo;re ready to provide you with the best solutions tailored to your needs. Let’s get started!</description>
     </item>
     <item>
       <title>Post 3 bala</title>
@@ -76,7 +90,7 @@
       <link>https://example.org/cmds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/cmds/</guid>
-      <description>hugo new brands/johnson-and-johnson/ETHICON-SUTURES.md hugo new brands/johnson-and-johnson/ETHICON-CUTTER.md hugo new brands/johnson-and-johnson/Proximate-Skin-Staplers.md hugo new brands/johnson-and-johnson/ETHICON-PROLENE-MESH.md</description>
+      <description>hugo new brands/accessories/Surgical-Handwash.md hugo new brands/accessories/Skin-Cleanser.md hugo new brands/accessories/Handrub-Solution.md hugo new brands/accessories/Blue-Handrub.md hugo new brands/accessories/Ioprep.md hugo new brands/accessories/Tincture.md hugo new brands/accessories/PVP-S.md hugo new brands/accessories/PVP-Surgical-Handwash.md&#xA;hugo new brands/accessories/CATHETER-MAHURKHAR.md hugo new brands/accessories/MULTILUMEN-CATHETER.md hugo new brands/accessories/AVF-NEEDLE.md hugo new brands/accessories/TRANSDUCER-PROTECTOR.md hugo new brands/accessories/Dressing-Kit.md hugo new brands/accessories/Maxid-chronic-catheter.md hugo new brands/accessories/Tal-Palindrome-chronic-catheter.md</description>
     </item>
   </channel>
 </rss>

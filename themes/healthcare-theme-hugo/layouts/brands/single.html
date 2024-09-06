@@ -63,16 +63,13 @@
     {{ range $products }}
     <div class="row my-5 justify-content-around">
       <!-- Left: Product Image -->
-      <div class="col-md-5 mb-4 mb-md-0">
+      <div class="col-md-4 mb-4 mb-md-0">
         <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid">
       </div>
       <!-- Right: Product Info -->
-      <div class="col-md-6">
+      <div class="col-md-8">
         <h2>{{ .Title }}</h2>
         {{ .Content }}
-        <!-- <p><i class="fas fa-info-circle"></i> <strong>Description:</strong> {{ .Params.description }}</p> -->
-        <!-- <p><i class="fas fa-stethoscope"></i> <strong>Uses:</strong> {{ .Params.uses }}</p> -->
-        <!-- <p><i class="fas fa-thumbs-up"></i> <strong>Advantages:</strong> {{ .Params.advantages }}</p> -->
         <a href="{{ .Params.cta_link }}" class="btn btn-success">Enquire Now</a>
         <a href="{{ .Permalink }}" class="btn btn-tertiary ms-3">Read more</a>
       </div>
