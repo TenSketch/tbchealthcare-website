@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=egde">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="/images/favicon.png">
-<title>Green | TBC Healthcare - Excellence in Healthcare Solutions</title>
+<title> | TBC Healthcare - Excellence in Healthcare Solutions</title>
 <meta name="description" content="The Business Center (TBC Healthcare) offers innovative healthcare solutions in partnership with Fresenius, providing world-class services and products to meet the diverse needs of medical professionals and patients. Explore our range of healthcare management systems and expert consultancy services tailored to enhance the efficiency and quality of care.">
 <meta name="keywords" content="TBC Healthcare, healthcare solutions, Baxter, Continuous Amputated Peritoneal Dialysis, CAPD, Fresenius, Aqua WTU, Aqua B Reverse Osmosis, 5008 Dialysis Machine, 4008 Dialysis Machine-NG, Single-use Dialyser, Blood Tubing, Bibag, PlasmaFlux PSu filters, 4008A dialysis machine, Johnson &amp; Johnson, Cidex Solution, Ethicon Sutures, Ethicon Cutter, Proximate Skin Stapler, Ethicon Prolene Mesh, Schulke, Microshield M4, Microshield M2, Microshield Handrub, Microshield Blue Handrub, Microshield Ioprep, Microshield Tincture, Microshield PVP-S, Microshield PVP, Catheter Mahurkhar, Multilumen Catheter, Transducer Protector, AVF Needle, Dressing Kit, Maxid chronic catheter, Tal Palindrome chronic catheter, medical accessories, healthcare management.">
 
 
-<meta property="og:title" content="Green">
+<meta property="og:title" content="">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://example.org/">
 <meta property="og:description" content="The Business Center (TBC Healthcare) offers innovative healthcare solutions in partnership with Fresenius, providing world-class services and products to meet the diverse needs of medical professionals and patients. Explore our range of healthcare management systems and expert consultancy services tailored to enhance the efficiency and quality of care.">
@@ -82,16 +82,89 @@
 
   <main>
     
-  <h1>Green</h1>
+<div class="container my-5 py-5">
   
   
-    <h2><a href="/posts/post-3/">Post 3 bala</a></h2>
-    Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.
+  <p class="text-end">Today: <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time></p>
   
-    <h2><a href="/posts/post-2/">Post 2</a></h2>
-    Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
-Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.
+  </section>
+</div>
+
+<script>
   
+  $(document).ready(function () {
+    $.getJSON('cities.json', function (data) {
+      const cityStateMap = data.cities;
+      const cityInput = $('#city');
+      const stateInput = $('#state');
+      const cityDataList = $('#cities');
+
+      
+      cityStateMap.forEach(cityObj => {
+        cityDataList.append(new Option(cityObj.city, cityObj.city));
+      });
+
+      
+      cityInput.on('input', function () {
+        const selectedCity = $(this).val();
+        const cityMatch = cityStateMap.find(cityObj => cityObj.city.toLowerCase() === selectedCity.toLowerCase());
+        stateInput.val(cityMatch ? cityMatch.state : '');
+      });
+    });
+
+    
+    const productsByBrand = {
+      'Fresenius': [
+        '4008A Hemodialysis Machine',
+        '4008S Next Generation Hemodialysis Machine',
+        '5008S Hemodialysis Machine',
+        'AquaB Central Reverse Osmosis Water Treatment System',
+        'AquaWTU Compact Water Treatment System',
+        'Bibag® – Dry Bicarbonate Concentrate',
+        'Blood Tubing',
+        'FX-class High-Flux Dialysers and Haemofilters',
+        'PlasmaFlux® PSu filters - P1dry/P2dry'
+      ],
+      'Johnson': [
+        'CIDEX SOLUTION',
+        'ETHICON SUTURES',
+        'ETHICON CUTTER',
+        'Proximate Skin Staplers',
+        'ETHICON PROLENE MESH'
+      ],
+      'Schulke': [
+        'MICROSHIELD® 4 Chlorhexidine Surgical Handwash',
+        'Microshield® 2 Chlorhexidine Skin Cleanser',
+        'MICROSHIELD® Handrub Solution',
+        'Microshield® Blue Handrub',
+        'Microshield® Ioprep',
+        'MICROSHIELD® Tincture',
+        'Microshield® PVP-S',
+        'Microshield® PVP Povidone-Iodine Surgical Handwash'
+      ],
+      'Accessories': [
+        'CATHETER -MAHURKHAR',
+        'MULTILUMEN CATHETER',
+        'AVF NEEDLE',
+        'TRANSDUCER PROTECTOR',
+        'Dressing Kit',
+        'Maxid chronic catheter',
+        'Tal Palindrome chronic catheter'
+      ]
+    };
+
+    $('#brand').on('change', function () {
+      const selectedBrand = $(this).val();
+      const products = productsByBrand[selectedBrand] || [];
+      $('#products').empty();
+      products.forEach(function (product) {
+        $('#products').append(new Option(product, product));
+      });
+    });
+  });
+</script>
+
+
 
   </main>
     <footer class="main-footer bg-dark text-light">
