@@ -1,0 +1,35 @@
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL "class" "nav-link" }}
+    {{- $class := "nav-item" }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "nav-link active" "aria-current" "page") }}
+    {{- $class = "nav-item active" }}
+    {{- else if $page.HasMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "nav-link ancestor" "aria-current" "true") }}
+      {{- $class = "nav-item ancestor" }}
+    {{- end }}
+
+    {{- if .HasChildren }}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{ .Name }}
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .Children) }}
+        </ul>
+      </li>
+    {{- else }}
+      <li class="{{ $class }}">
+        <a
+          {{- range $k, $v := $attrs }}
+            {{- with $v }}
+              {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+            {{- end }}
+          {{- end -}}
+        >{{ .Name }}</a>
+      </li>
+    {{- end }}
+  {{- end }}
+{{- end }}

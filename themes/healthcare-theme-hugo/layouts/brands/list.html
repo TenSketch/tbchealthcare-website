@@ -1,0 +1,86 @@
+{{ define "main" }}
+<!-- Section 1: Intro Banner -->
+<section class="brand-intro container px-0 my-5 py-5">
+  <div class="row align-items-center">
+    <!-- Left: Brand Logo -->
+    <div class="col-md-4 text-center">
+      <img src="/images/baxter-logo.png" alt="Baxter Logo" class="img-fluid" style="max-height: 150px;">
+    </div>
+    <!-- Right: Brand Details -->
+    <div class="col-md-7 ms-auto">
+      <h1>Baxter</h1>
+      <p>Baxter is a leading healthcare company providing a range of products for dialysis and more. Their commitment to
+        quality and patient care makes them a trusted name in the industry.</p>
+      <p><strong>USP:</strong> 30 years of experience in reliable dialysis solutions.</p>
+      <a href="https://www.baxter.com" target="_blank" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Product Carousel -->
+<section class="brand-products-carousel container-fluid my-5 py-5 px-0">
+  <!-- <h1 class="text-center mb-5">Our Products </h1> -->
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Example Product Slide -->
+      <div class="carousel-item active">
+        <img src="/images/CAPD.png" class="d-block w-100" alt="CAPD Product">
+      </div>
+      <!-- Add more carousel items here -->
+      <div class="carousel-item">
+        <img src="/images/banner.jpg" class="d-block w-100" alt="CAPD Product">
+      </div>
+    </div>
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Section 3: All Products List -->
+<section class="brand-products-list container my-5">
+  <h1 class="text-center mb-5">Our Products </h1>
+  <div class="row mb-4">
+    <!-- Left: Product Image -->
+    <div class="col-md-4">
+      <img src="/images/CAPD.png" alt="CAPD Product Image" class="img-fluid">
+    </div>
+    <!-- Right: Product Info -->
+    <div class="col-md-7 ms-auto">
+      <h2 class="mb-4 text-uppercase">Continuous Ambulatory Peritoneal Dialysis (CAPD)</h2>
+      <h3 class="mb-4"><i class="fas fa-info-circle"></i> Description</h4>
+      <p>Dianeal Ambuflex is indicated for patients with chronic renal failure...</p>
+      <div class="uses mb-4">
+        <h3 class="mb-4"><i class="fas fa-stethoscope"></i> Uses:</h4>
+        <ul>
+          <li>
+            <strong>Dianeal Ambuflex Indications:</strong><br>Dianeal Ambuflex is indicated for patients with chronic
+            renal failure who are being maintained on peritoneal dialysis. Peritoneal dialysis is recommended for patients
+            with acute or chronic renal failure when nondialytic medical treatments are deemed insufficient.
+          </li>
+          <li>
+            <strong>Dianeal UltraBag Indications:</strong><br>Dianeal peritoneal dialysis solutions in UltraBag containers
+            are indicated for use in patients with chronic renal failure undergoing continuous ambulatory peritoneal
+            dialysis when nondialytic medical therapy is considered inadequate.
+          </li>
+        </ul>
+      </div>
+
+      <h3><i class="fas fa-thumbs-up"></i> Advantages:</h4> 
+      <ul>
+        <li>Dianeal, the first commercially available solution for Continuous Ambulatory Peritoneal Dialysis (CAPD), has been providing dependable outcomes for dialysis patients, leveraging 30 years of trusted experience.</li>
+      </ul>
+      
+      <a href="/enquiry" class="btn btn-success mt-4">Enquire Now</a>
+    </div>
+  </div>
+  <!-- Repeat for more products -->
+</section>
+
+{{ end }}

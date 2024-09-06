@@ -1,0 +1,24 @@
+company_name: "The Business Centre"
+head_office:
+  address_line1: "44/3, 102 Street"
+  address_line2: "14th Sector, KK Nagar"
+  city: "Chennai"
+  postal_code: "600 078"
+  state: "Tamil Nadu"
+  country: "India"
+branch_office:
+  address_line1: "No.9, 4th Street, Ground floor"
+  address_line2: "Lake Area, Behind Mattuthvanai Bus Stand"
+  city: "Madurai"
+  postal_code: "625 107"
+contact_numbers:
+  dialyzers_hemodialyzers:
+    label: "Contact for Dialyzers/Hemodialyzers"
+    numbers:
+      - "04524370200"
+      - "04524370300"
+  surgicals_sutures:
+    label: "Contact for Surgicals/Sutures"
+    numbers:
+      - "9884125700"
+email: "vikram@tbchealthcare.com"

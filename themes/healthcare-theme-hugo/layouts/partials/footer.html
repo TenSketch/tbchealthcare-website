@@ -1,0 +1,103 @@
+<footer class="main-footer bg-dark text-light">
+    <div class="container py-5">
+        <!-- <hr> -->
+        <div class="row">
+            <!-- Dynamic Links from Menu -->
+            <div class="col-md-3">
+                <h4>Links</h4>
+                <ul class="list-unstyled">
+                    {{- $menu := .Site.Menus.main }}
+                    {{- range $menu }}
+                        {{- if .HasChildren }}
+                            <li class="my-2"><strong>{{ .Name }}</strong></li>
+                            <ul class="list-unstyled ms-3">
+                                {{- range .Children }}
+                                    <li class="mt-1"><a href="{{ .URL }}" class="text-warning">{{ .Name }}</a></li>
+                                {{- end }}
+                            </ul>
+                        {{- else }}
+                            <li class="mt-1"><a href="{{ .URL }}" class="text-warning">{{ .Name }}</a></li>
+                        {{- end }}
+                    {{- end }}
+                </ul>
+            </div>
+            <!-- Head Office Address -->
+            <div class="col-md-3">
+                <h4>Address</h4>
+                <address>
+                    <strong>{{ .Site.Data.contact_info.company_name }} - Head Office</strong><br>
+                    {{ .Site.Data.contact_info.head_office.address_line1 }}<br>
+                    {{ .Site.Data.contact_info.head_office.address_line2 }}<br>
+                    {{ .Site.Data.contact_info.head_office.city }} - {{ .Site.Data.contact_info.head_office.postal_code
+                    }}<br>
+                    {{ .Site.Data.contact_info.head_office.state }}, {{ .Site.Data.contact_info.head_office.country }}
+                </address>
+                <address>
+                    <strong>Branch Office</strong><br>
+                    {{ .Site.Data.contact_info.branch_office.address_line1 }}<br>
+                    {{ .Site.Data.contact_info.branch_office.address_line2 }}<br>
+                    {{ .Site.Data.contact_info.branch_office.city }} - {{
+                    .Site.Data.contact_info.branch_office.postal_code }}
+                </address>
+            </div>
+            <!-- Contacts -->
+            <div class="col-md-3">
+                <h4>Contact Information:</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-warning" href="mailto:{{ .Site.Data.contact_info.email }}">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> {{ .Site.Data.contact_info.email }}
+                        </a>
+                    </li>
+                    {{ range $category, $details := .Site.Data.contact_info.contact_numbers }}
+                    <p class="mb-1">{{ $details.label }}</p>
+                    <ul class="list-unstyled my-3">
+                        {{ range $details.numbers }}
+                            <li><a href="tel:{{ . }}">{{ . }}</a></li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+                </ul>
+                <!-- Social Links -->
+                <h4>Follow Us</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.facebook.com/businesscentrec/" target="_blank" class="me-3">
+                            <img src="/images/facebook.png" alt="facebook icon">
+                        </a>
+                        <a href="http://www.alibaba.com/member/in106885245.html" target="_blank">
+                            <img src="/images/alibaba.png" width="80px" alt="Alibaba">
+                        </a>
+                        <a href="https://www.indiamart.com/the-business-centre/" target="_blank" class="ms-3">
+                            <img src="/images/indiamart.png" width="80px" alt="IndiaMART">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="col-md-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" title="The Business Centre Location in Chennai"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8607830253013!2d80.20412881420137!3d13.044532216804631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266dcdc5b647b%3A0x39cefc6021300b66!2sThe+Business+centre!5e0!3m2!1sen!2sin!4v1513919132506"
+                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <hr class="my-0"> -->
+    </div>
+</footer>
+
+<!-- Bottom Footer -->
+<footer class="bottom-footer text-center py-3">
+    <p class="mb-0">
+        &copy; 2017 - {{ now.Format "2006" }} TBC Healthcare - All Rights Reserved.
+        <br>Made with
+        <i class="fa fa-heart text-secondary" aria-hidden="true"></i>
+        by
+        <a href="http://www.tensketch.com/" target="_blank" class="text-warning">TenSketch</a> and
+        <a href="http://www.ncdesigns.studio/" target="_blank" class="text-warning">NC Designs.Studio</a>
+    </p>
+</footer>

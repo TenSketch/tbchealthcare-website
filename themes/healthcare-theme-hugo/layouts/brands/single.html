@@ -1,0 +1,84 @@
+{{ define "main" }}
+<!-- Section 1: Intro Banner -->
+<section class="brand-intro  my-5 py-5 ">
+  <div class="container-fluid px-0">
+    <div class="row align-items-center justify-content-around">
+      <!-- Left: Brand Logo -->
+      <div class="col-md-3 text-center mb-4 mb-md-0">
+        <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="img-fluid" style="max-height: 150px;">
+      </div>
+      <!-- Right: Brand Details -->
+      <div class="col-md-8 bg-dark text-white p-5">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.description }}</p>
+        <!-- <p>USP: {{ .Params.usp }}</p> -->
+        <a href="{{ .Params.website }}" target="_blank" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Product Carousel -->
+<section class="brand-products-carousel container my-5 d-none">
+  <h3>Our Products-test</h3>
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Filter pages based on the 'carousel' category -->
+      {{ $carouselItems := where .Site.RegularPages "Params.category" "carousel" }}
+      {{ if gt (len $carouselItems) 0 }} <!-- Ensure there are carousel items -->
+        {{ range $index, $product := $carouselItems }}
+          {{ $carouselImages := $product.Params.carouselImages }}
+          {{ if $carouselImages }} <!-- Check if carouselImages is not empty -->
+            {{ range $imgIndex, $img := $carouselImages }}
+            <div class="carousel-item {{ if and (eq $index 0) (eq $imgIndex 0) }}active{{ end }}">
+              <img src="{{ $img }}" class="d-block w-100" alt="{{ $product.Title }} - Slide {{ add $imgIndex 1 }}">
+            </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        <div class="carousel-item active">
+          <p>No carousel items found.</p>
+        </div>
+      {{ end }}
+    </div>
+  
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+</section>
+
+<!-- Section 3: All Products List -->
+<section class="brand-products-list container my-5">
+  <div class="container my-5">
+    {{ $products := .Resources.Match "*.md" }}
+    {{ range $products }}
+    <div class="row my-5 justify-content-around">
+      <!-- Left: Product Image -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid">
+      </div>
+      <!-- Right: Product Info -->
+      <div class="col-md-6">
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+        <!-- <p><i class="fas fa-info-circle"></i> <strong>Description:</strong> {{ .Params.description }}</p> -->
+        <!-- <p><i class="fas fa-stethoscope"></i> <strong>Uses:</strong> {{ .Params.uses }}</p> -->
+        <!-- <p><i class="fas fa-thumbs-up"></i> <strong>Advantages:</strong> {{ .Params.advantages }}</p> -->
+        <a href="{{ .Params.cta_link }}" class="btn btn-success">Enquire Now</a>
+        <a href="{{ .Permalink }}" class="btn btn-tertiary ms-3">Read more</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

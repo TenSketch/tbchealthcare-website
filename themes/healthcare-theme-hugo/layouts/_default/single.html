@@ -1,0 +1,197 @@
+{{ define "main" }}
+<div class="container my-5 py-5">
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  <p class="text-end">Today: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></p>
+  {{ if eq .Params.layout "enquiry" }}
+  <section class="enquiry-form">
+
+    <h1 class="text-center">{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="row justify-content-between my-5">
+      {{ range sort .Site.Taxonomies.tags.brands.Pages "Weight" }}
+      <div class="col-md-2 card brand-card p-3 text-center">
+        <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo">
+        <!-- <div class="card-body">
+          <h5 class="card-title">{{ .Title }}</h5>
+          <p class="card-text">{{ .Params.description }}</p>
+          <div class="d-flex justify-content-center">
+            <a href="{{ .Permalink }}" class="btn btn-tertiary">Read more</a>
+          </div>
+        </div> -->
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/images/enquiry-form.jpg" alt="enquiry-form img">
+      </div>
+      <div class="col-md-6">
+        <form>
+          <!-- First Name -->
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <!-- Last Name -->
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+          <!-- Mobile Number -->
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobile" required>
+          </div>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <!-- Address Line 1 -->
+          <div class="mb-3">
+            <label for="address1" class="form-label">Address Line 1</label>
+            <input type="text" class="form-control" id="address1" required>
+          </div>
+          <!-- Address Line 2 -->
+          <div class="mb-3">
+            <label for="address2" class="form-label">Address Line 2 (Optional)</label>
+            <input type="text" class="form-control" id="address2">
+          </div>
+          <!-- City Selection -->
+          <div class="mb-3">
+            <label for="city" class="form-label">City/District</label>
+            <input type="text" class="form-control" id="city" list="cities" placeholder="Type city name..." required>
+            <datalist id="cities">
+              <!-- Cities will be populated dynamically -->
+            </datalist>
+          </div>
+          <!-- State (Auto-Filled based on City) -->
+          <div class="mb-3">
+            <label for="state" class="form-label">State</label>
+            <input type="text" class="form-control" id="state" readonly required>
+          </div>
+          <!-- Pincode -->
+          <div class="mb-3">
+            <label for="pincode" class="form-label">Pincode</label>
+            <input type="text" class="form-control" id="pincode" required>
+          </div>
+          <!-- Brand Selection -->
+          <div class="mb-3">
+            <label for="brand" class="form-label">Select Brand</label>
+            <select class="form-select" id="brand">
+              <option value="">Select a brand</option>
+              <option value="Baxter">Baxter</option>
+              <option value="Fresenius">Fresenius</option>
+              <option value="Johnson">Johnson & Johnson</option>
+              <option value="Schulke">Schulke</option>
+              <option value="Accessories">Accessories</option>
+            </select>
+          </div>
+          <!-- Products based on Brand -->
+          <div class="mb-3">
+            <label for="products" class="form-label">Products</label>
+            <select class="form-select" id="products">
+              <!-- Options will be dynamically populated -->
+            </select>
+          </div>
+          <!-- Quantity -->
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <select class="form-select" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- More quantities as needed -->
+            </select>
+          </div>
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+          </div>
+          <!-- Send Enquiry Button -->
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+    {{ end }}
+  </section>
+</div>
+
+<script>
+  // Fetch city and state data from external JSON file
+  $(document).ready(function () {
+    $.getJSON('cities.json', function (data) {
+      const cityStateMap = data.cities;
+      const cityInput = $('#city');
+      const stateInput = $('#state');
+      const cityDataList = $('#cities');
+
+      // Populate datalist options with cities
+      cityStateMap.forEach(cityObj => {
+        cityDataList.append(new Option(cityObj.city, cityObj.city));
+      });
+
+      // Auto-fill state based on selected city
+      cityInput.on('input', function () {
+        const selectedCity = $(this).val();
+        const cityMatch = cityStateMap.find(cityObj => cityObj.city.toLowerCase() === selectedCity.toLowerCase());
+        stateInput.val(cityMatch ? cityMatch.state : '');
+      });
+    });
+
+    // Populate products based on brand selection
+    const productsByBrand = {
+      'Fresenius': [
+        '4008A Hemodialysis Machine',
+        '4008S Next Generation Hemodialysis Machine',
+        '5008S Hemodialysis Machine',
+        'AquaB Central Reverse Osmosis Water Treatment System',
+        'AquaWTU Compact Water Treatment System',
+        'Bibag® – Dry Bicarbonate Concentrate',
+        'Blood Tubing',
+        'FX-class High-Flux Dialysers and Haemofilters',
+        'PlasmaFlux® PSu filters - P1dry/P2dry'
+      ],
+      'Johnson': [
+        'CIDEX SOLUTION',
+        'ETHICON SUTURES',
+        'ETHICON CUTTER',
+        'Proximate Skin Staplers',
+        'ETHICON PROLENE MESH'
+      ],
+      'Schulke': [
+        'MICROSHIELD® 4 Chlorhexidine Surgical Handwash',
+        'Microshield® 2 Chlorhexidine Skin Cleanser',
+        'MICROSHIELD® Handrub Solution',
+        'Microshield® Blue Handrub',
+        'Microshield® Ioprep',
+        'MICROSHIELD® Tincture',
+        'Microshield® PVP-S',
+        'Microshield® PVP Povidone-Iodine Surgical Handwash'
+      ],
+      'Accessories': [
+        'CATHETER -MAHURKHAR',
+        'MULTILUMEN CATHETER',
+        'AVF NEEDLE',
+        'TRANSDUCER PROTECTOR',
+        'Dressing Kit',
+        'Maxid chronic catheter',
+        'Tal Palindrome chronic catheter'
+      ]
+    };
+
+    $('#brand').on('change', function () {
+      const selectedBrand = $(this).val();
+      const products = productsByBrand[selectedBrand] || [];
+      $('#products').empty();
+      products.forEach(function (product) {
+        $('#products').append(new Option(product, product));
+      });
+    });
+  });
+</script>
+
+<!-- {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} -->
+{{ end }}

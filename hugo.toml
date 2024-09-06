@@ -1,0 +1,72 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'TBC Healthcare - Excellence in Healthcare Solutions'
+theme = 'healthcare-theme-hugo'
+[params]
+favicon = "/images/favicon.png"
+description = "The Business Center (TBC Healthcare) offers innovative healthcare solutions in partnership with Fresenius, providing world-class services and products to meet the diverse needs of medical professionals and patients. Explore our range of healthcare management systems and expert consultancy services tailored to enhance the efficiency and quality of care."
+keywords = "TBC Healthcare, healthcare solutions, Baxter, Continuous Amputated Peritoneal Dialysis, CAPD, Fresenius, Aqua WTU, Aqua B Reverse Osmosis, 5008 Dialysis Machine, 4008 Dialysis Machine-NG, Single-use Dialyser, Blood Tubing, Bibag, PlasmaFlux PSu filters, 4008A dialysis machine, Johnson & Johnson, Cidex Solution, Ethicon Sutures, Ethicon Cutter, Proximate Skin Stapler, Ethicon Prolene Mesh, Schulke, Microshield M4, Microshield M2, Microshield Handrub, Microshield Blue Handrub, Microshield Ioprep, Microshield Tincture, Microshield PVP-S, Microshield PVP, Catheter Mahurkhar, Multilumen Catheter, Transducer Protector, AVF Needle, Dressing Kit, Maxid chronic catheter, Tal Palindrome chronic catheter, medical accessories, healthcare management."
+author = "Balachandiran - TenSketch"
+og_image = "/images/ogimage.png"
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About Us"
+    url = "/about-us.html"
+    weight = 2
+
+  [[menu.main]]
+    name = "Our Products"
+    identifier = "our-brands"
+    weight = 3
+
+    [[menu.main]] 
+      parent = "our-brands"
+      name = "Baxter"
+      url = "/brands/baxter"
+      weight = 1
+
+    [[menu.main]]
+      parent = "our-brands"
+      name = "Fresenius"
+      url = "/brands/fresenius"
+      weight = 2
+
+    [[menu.main]]
+      parent = "our-brands"
+      name = "Johnson & Johnson"
+      url = "/brands/johnson-and-johnson"
+      weight = 3
+
+    [[menu.main]]
+      parent = "our-brands"
+      name = "Schulke"
+      url = "/brands/schulke"
+      weight = 4
+
+    [[menu.main]]
+      parent = "our-brands"
+      name = "Accessories"
+      url = "/brands/accessories"
+      weight = 5
+
+  [[menu.main]]
+    name = "Enquiry"
+    url = "/enquiry"
+    weight = 4
+
+  [[menu.main]]
+    name = "Contact Us"
+    url = "/contact"
+    weight = 5
+
+  [[menu.main]]
+    name = "Call us: 98412 89420"
+    url = "tel:98412 89420"
+    weight = 6

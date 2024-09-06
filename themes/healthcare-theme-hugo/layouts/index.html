@@ -1,0 +1,175 @@
+{{ define "main" }}
+<!-- <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      {{ range .Site.RegularPages.ByWeight }}
+      <div class="carousel-item {{ if eq .Params.weight 1 }}active{{ end }}">
+        <img src="{{ .Params.image }}" class="d-block w-100" alt="{{ .Title }}">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{ .Title }}</h5>
+          <p>{{ .Params.description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#companyCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <section class="banner d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-4 text-center mb-0">Your Comprehensive Partner for<br><span class=""><em>Surgical and Nephrology Product Distribution</em></span></h1>
+    </div>
+  </section>
+  
+  <!-- about timeline -->
+
+<section class="about-timeline py-5">
+  <div class="container">
+    <h1 class="text-center mb-3">About TBC Healthcare</h1>
+    <h2 class="text-center mb-5 fst-italic">The story of our evolution</h2>
+    <div class="timeline position-relative">
+      <div class="row mb-5">
+          <div class="col-md-5 ms-auto right position-relative">
+              <div class="timeline-content">
+                  <h2>1996</h2>
+                  <p>Established as Authorised Channel partner for M/s. Johnson & Johnson - Medical, we were able to expand our services to Major Institutions and Leading Nursing Homes and Dialysis Centers.</p>
+              </div>
+          </div>
+      </div>
+    
+      <div class="row mb-5">
+          <div class="col-md-5 me-auto left position-relative">
+              <div class="timeline-content">
+                  <h2>2001</h2>
+                  <p>Started handling the CAPD Products of M/s. Baxter (India) Pvt. Ltd, servicing about 150 Dialysis Patients and all Major Renal Centers in Chennai.</p>
+              </div>
+          </div>
+      </div>
+    
+      <div class="row mb-5">
+          <div class="col-md-5 ms-auto right position-relative">
+              <div class="timeline-content">
+                  <h2>2010</h2>
+                  <p>Our company advertisement was showcased in Cardio Vascular surgeon conference's magazine published by Government Hospital, Chennai.</p>
+              </div>
+          </div>
+      </div>
+    
+      <div class="row mb-5">
+          <div class="col-md-5 me-auto left position-relative">
+              <div class="timeline-content">
+                  <h2>2013</h2>
+                  <p>Marketed a new landmark to our products range to start marketing & sales of Fresenius Medical care - Dialysis Machines.</p>
+              </div>
+          </div>
+      </div>
+    
+      <div class="row mb-5">
+          <div class="col-md-5 ms-auto right position-relative">
+              <div class="timeline-content">
+                  <h2>2016</h2>
+                  <p>Expanded South Tamilnadu, India operation to our Madurai warehouse with dedicated Sales Team & Admin staff.</p>
+              </div>
+          </div>
+      </div>
+    
+      <div class="row mb-5">
+          <div class="col-md-5 me-auto left position-relative">
+              <div class="timeline-content">
+                  <h2>CSR</h2>
+                  <p>Our company jointly conducted Nursing and Operation Theater programs based on skills developments, advanced sterilization techniques.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- brands section -->
+<section class="brands-section py-5">
+    <div class="container">
+    <h1 class="text-center mb-4">Brands we deal</h1>
+
+      <div class="row">
+        {{ range sort .Site.Taxonomies.tags.brands.Pages "Weight" }}
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card brand-card p-3 text-center">
+                <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo">
+                <div class="card-body">
+                  <h5 class="card-title">{{ .Title }}</h5>
+                  <p class="card-text">{{ .Params.description }}</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="{{ .Permalink }}" class="btn btn-tertiary">Read more</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  
+<!-- Why Us Section -->
+<section class="why-us text-center text-dark py-5">
+  <div class="container">
+      <h2 class="mb-5">Why us?</h2>
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <ul class="list-unstyled">
+              <li class="d-flex align-items-center justify-content-start mb-3">
+                  <i class="fas fa-check-circle me-3"></i>
+                  Quicker access of Consumables to dialysis treatment centres
+              </li>
+              <li class="d-flex align-items-center justify-content-start mb-3">
+                  <i class="fas fa-check-circle me-3"></i>
+                  Faster connection from regional Madurai branch offices to South, Tamil Nadu.
+              </li>
+              <li class="d-flex align-items-center justify-content-start mb-3">
+                  <i class="fas fa-check-circle me-3"></i>
+                  Professional approach to logistics of products with SMS Facility and SAP ERP.
+              </li>
+              <li class="d-flex align-items-center justify-content-start mb-3">
+                  <i class="fas fa-check-circle me-3"></i>
+                  Direct connection with customer.
+              </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Milestones Section -->
+<section class="milestones py-5 text-center">
+    <div class="container">
+        <h2 class="mb-5">Our milestones</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="milestone">
+                    <i class="fas fa-rocket"></i>
+                    <h3 class="counter" data-target="4">0</h3>
+                    <p>Brands</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="milestone">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3 class="counter" data-target="21">0</h3>
+                    <p>Products</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="milestone">
+                    <i class="fas fa-home"></i>
+                    <h3 class="counter" data-target="30">0</h3>
+                    <p>Major Institutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
