@@ -65,12 +65,6 @@ img {
   color: var(--light-clr) !important;
 }
 
-.btn {
-  border: none;
-  width: 100%;
-  border-radius: 0;
-}
-
 .bg-dark {
   background-color: var(--dark-clr) !important;
 }
@@ -79,33 +73,82 @@ img {
   background-color: var(--light-clr) !important;
 }
 
-.btn-primary {
-  background-color: var(--primary-clr);
-}
-
-.btn-tertiary {
-  background-color: var(--tertiary-clr);
-  color: var(--white);
+.btn {
+  background-color: none;
   border: none;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
+  /* width: 100%; */
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1),
     -2px -2px 6px rgba(255, 255, 255, 0.7);
-}
-
-.btn-tertiary:hover {
-  background-color: var(--tertiary-clr);
-}
-
-.btn-success {
-  background-color: var(--secondary-clr);
-  transition: opacity 350ms ease;
-
+  transition: all 350ms ease;
+  @media(max-width:600px){
+    font-size: 0.9rem;
+  }
   &:hover {
-    background-color: var(--secondary-clr);
+    background-color: none;
     opacity: 0.8;
   }
 
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: var(--primary-clr);
+  border: 2px solid var(--primary-clr);
+}
+
+/* btn-primary-outline */
+.btn-primary-outline {
+  background-color: none;
+  border: 2px solid var(--primary-clr);
+  color: var(--primary-clr);
+
+  &:hover {
+    background-color: var(--primary-clr);
+    color: var(--white);
+  }
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  background-color: var(--secondary-clr);
+  border: 2px solid var(--secondary-clr);
+}
+
+/* btn-secondary-outline */
+.btn-secondary-outline {
+  background-color: none;
+  border: 2px solid var(--secondary-clr);
+  color: var(--secondary-clr);
+
+  &:hover {
+    background-color: var(--secondary-clr);
+    color: var(--white);
+  }
+}
+
+.btn-tertiary,
+.btn-tertiary:hover {
+  background-color: var(--tertiary-clr);
+  border: 2px solid var(--tertiary-clr);
+
+}
+
+/* btn-tertiary-outline */
+.btn-tertiary-outline {
+  background-color: none;
+  border: 2px solid var(--tertiary-clr);
+  color: var(--tertiary-clr);
+
+  &:hover {
+    background-color: var(--tertiary-clr);
+    color: var(--white);
+  }
+}
+.form-control{
+  border-radius: 0;
 }
 
 .neumorphism {

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- Section 1: Intro Banner -->
 <section class="brand-intro  my-5 py-5 ">
-  <div class="container-fluid px-0">
+  <div class="container-fluid px-md-0">
     <div class="row align-items-center justify-content-around">
       <!-- Left: Brand Logo -->
       <div class="col-md-3 text-center mb-4 mb-md-0">
@@ -70,8 +70,10 @@
       <div class="col-md-8">
         <h2>{{ .Title }}</h2>
         {{ .Content }}
-        <a href="{{ .Params.cta_link }}" class="btn btn-success">Enquire Now</a>
-        <a href="{{ .Permalink }}" class="btn btn-tertiary ms-3">Read more</a>
+        <div class="d-flex align-items-center gap-3 mt-4">
+          <a href="{{ .Params.cta_link }}" target="_blank" rel="noopener" class="btn btn-primary">Enquire Now</a>
+          <a href="{{ .Params.pdf }}" target="_blank" rel="noopener" class="btn btn-primary-outline">View Catalogue</a>
+        </div>
       </div>
     </div>
     {{ end }}

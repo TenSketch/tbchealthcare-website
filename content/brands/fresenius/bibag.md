@@ -2,23 +2,24 @@
 title: 'Fresenius bibag® – Dry Bicarbonate Concentrate'
 images: 
     - "/images/bibag.png"
+pdf: "/pdf/Catalogue-bibag.pdf"
 cta_link: "/enquiry"
 type: "brands"
-date: 2024-08-30T13:00:18+05:30
+date: 2024-09-01T13:00:18+05:30
 draft: false
 ---
 
-### Product Description
+<!-- ### Product Description -->
 
 The **Fresenius bibag® – Dry Bicarbonate Concentrate** is an innovative solution designed for dialysis treatments, offering a convenient and reliable method of providing high-purity bicarbonate. This dry concentrate is specially formulated to dissolve easily in dialysis machines, ensuring consistent delivery of bicarbonate to patients. Packaged in a user-friendly bag, bibag® integrates seamlessly with Fresenius hemodialysis systems, optimizing the dialysis process by reducing preparation time and minimizing contamination risks.
 
-### Key Features
+<!-- ### Key Features
 
 - **Convenient Bag Design:** User-friendly and easy-to-handle bags designed for simple and quick integration with dialysis machines.
 - **High Purity:** Formulated to provide high-quality bicarbonate for dialysis, ensuring consistent and effective treatment.
 - **Compatibility:** Specifically designed for use with Fresenius Medical Care hemodialysis machines, ensuring a secure and efficient fit.
 - **Hygienic Solution:** Reduces contamination risk with its closed-system design, maintaining high standards of patient care.
-- **Long Shelf Life:** The dry concentrate format allows for extended storage, making it a reliable choice for dialysis centers.
+- **Long Shelf Life:** The dry concentrate format allows for extended storage, making it a reliable choice for dialysis centers. -->
 
 ### Uses
 
@@ -26,11 +27,11 @@ The **Fresenius bibag® – Dry Bicarbonate Concentrate** is an innovative solut
 - **Clinical Settings:** Suitable for use in dialysis clinics and hospitals to ensure efficient patient care.
 - **Home Dialysis:** Ideal for home dialysis setups where space and ease of use are crucial.
 
-### Who Needs This Product?
+<!-- ### Who Needs This Product?
 
 - **Dialysis Centers:** Facilities that require reliable, high-quality bicarbonate solutions for multiple patients.
 - **Hospitals:** Institutions offering dialysis services as part of their patient care need a consistent bicarbonate source.
-- **Home Dialysis Patients:** Individuals undergoing dialysis at home who need a user-friendly and safe bicarbonate option.
+- **Home Dialysis Patients:** Individuals undergoing dialysis at home who need a user-friendly and safe bicarbonate option. -->
 
 ### Benefits
 

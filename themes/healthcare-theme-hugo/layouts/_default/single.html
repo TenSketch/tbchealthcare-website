@@ -43,7 +43,7 @@
         <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
       </div>
       <div class="col-md-6">
-        <form>
+        <form name="contact" action="/thank-you" method="POST" netlify>
           <!-- First Name -->
           <div class="mb-3">
             <label for="firstName" class="form-label">First Name</label>
@@ -70,7 +70,7 @@
             <textarea class="form-control" id="message" rows="4"></textarea>
           </div>
           <!-- Send Enquiry Button -->
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-primary w-100">Send</button>
         </form>
       </div>
     </div>
@@ -80,7 +80,7 @@
   {{ if eq .Params.layout "enquiry" }}
   <section class="enquiry-form">
     <h1 class="text-center mb-5">{{ .Params.sectionTitle }}</h1>
-   
+
     <div class="row justify-content-between my-5">
       {{ range sort .Site.Taxonomies.tags.brands.Pages "Weight" }}
       <div class="col-md-3 card brand-card p-3 my-3 my-md-0 text-center">
@@ -101,7 +101,7 @@
         <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
       </div>
       <div class="col-md-6">
-        <form>
+        <form name="enquiry" action="/thank-you" method="POST" netlify>
           <!-- First Name -->
           <div class="mb-3">
             <label for="firstName" class="form-label">First Name</label>
@@ -192,7 +192,7 @@
             <textarea class="form-control" id="message" rows="4"></textarea>
           </div>
           <!-- Send Enquiry Button -->
-          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
         </form>
       </div>
     </div>
@@ -260,6 +260,31 @@
   </script>
   {{ end }}
 
+  <!-- thank-you page -->
+  {{ if eq .Params.layout "thanks" }}
+
+  <section class="thank-you">
+    <div class="container text-center mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg p-4">
+            <div class="card-body">
+              <h1 class="display-4 text-success mb-4">Thank You!</h1>
+              <p class="lead">We appreciate your enquiry and will get back to you as soon as possible.</p>
+              <hr class="my-4">
+              <p>If you need immediate assistance, feel free to call us
+                <a class="nav-link phone-link" href="tel:+919841289420" title="tap to call mobile"
+                  aria-label="tap to call mobile">9841289420</a>
+                <!-- <a href="/contact" class="text-primary">contact us directly</a>. -->
+              </p>
+              <!-- <a href="/" class="btn btn-primary btn-lg mt-3">Go Back to Home</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
 
 </div>
 

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://tbchealthcare.com/'
 languageCode = 'en-us'
 title = 'TBC Healthcare - Excellence in Healthcare Solutions'
 theme = 'healthcare-theme-hugo'
@@ -22,7 +22,7 @@ og_image = "/images/ogimage.png"
     weight = 2
 
   [[menu.main]]
-    name = "Our Brands"
+    name = "Our Products"
     identifier = "our-brands"
     weight = 3
 
@@ -66,6 +66,6 @@ og_image = "/images/ogimage.png"
     weight = 5
 
   [[menu.main]]
-    name = "Call us: 98412 89420"
-    url = "tel:98412 89420"
+    name = "Call us: 9841289420"
+    url = "tel:9841289420"
     weight = 6
