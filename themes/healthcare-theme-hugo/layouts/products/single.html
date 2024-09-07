@@ -3,10 +3,6 @@
 <!-- accessories page -->
 <section class="brand-products-list container my-5">
     <div class="container my-5">
-        {{ $dateHuman := .Date | time.Format ":date_long" }}
-        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        <p class="text-end">Today: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></p>
-      
         <section class="brand-products-list container my-5">
             <div class="container my-5">
               {{ $products := .Resources.Match "*.md" }}
