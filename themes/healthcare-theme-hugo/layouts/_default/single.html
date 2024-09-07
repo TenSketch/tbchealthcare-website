@@ -44,30 +44,31 @@
       </div>
       <div class="col-md-6 mt-5 mt-md-0">
         <form name="contact" action="/thank-you" method="POST" netlify>
-          <!-- First Name -->
+          <!-- Name -->
           <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" required>
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" required>
           </div>
           <!-- Last Name -->
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <label for="lastName" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="lastName" required>
-          </div>
+          </div> -->
           <!-- Mobile Number -->
           <div class="mb-3">
             <label for="mobile" class="form-label">Mobile Number</label>
-            <input type="tel" class="form-control" id="mobile" required>
+            <input type="tel" class="form-control" id="mobile" name="Mobile"  placeholder="your 10 digit mobile no."
+            aria-label="mobile" minlength="10" maxlength="10" autocomplete="off"required>
           </div>
           <!-- Email -->
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control" id="email" name="Email" required>
           </div>
           <!-- Message -->
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
+            <textarea class="form-control" id="message" name="Message" rows="4"></textarea>
           </div>
           <!-- Send Enquiry Button -->
           <button type="submit" class="btn btn-primary w-100">Send</button>
@@ -102,40 +103,42 @@
       </div>
       <div class="col-md-6">
         <form name="enquiry" action="/thank-you" method="POST" netlify>
-          <!-- First Name -->
+          <!-- Name -->
           <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" required>
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter your name"
+            aria-label="Name" autocomplete="off" required>
           </div>
           <!-- Last Name -->
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <label for="lastName" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="lastName" required>
-          </div>
+          </div> -->
           <!-- Mobile Number -->
           <div class="mb-3">
             <label for="mobile" class="form-label">Mobile Number</label>
-            <input type="tel" class="form-control" id="mobile" required>
+            <input type="tel" class="form-control" id="mobile" name="Mobile" placeholder="your 10 digit mobile no."
+            aria-label="mobile" minlength="10" maxlength="10" autocomplete="off" required>
           </div>
           <!-- Email -->
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="abc@somemail.com" aria-label="email" autocomplete="off" required>
           </div>
           <!-- Address Line 1 -->
           <div class="mb-3">
             <label for="address1" class="form-label">Address Line 1</label>
-            <input type="text" class="form-control" id="address1" required>
+            <input type="text" class="form-control" id="address1" name="Address line 1" placeholder="Enter address line 1" required>
           </div>
           <!-- Address Line 2 -->
           <div class="mb-3">
             <label for="address2" class="form-label">Address Line 2 (Optional)</label>
-            <input type="text" class="form-control" id="address2">
+            <input type="text" class="form-control" id="address2" name="Address line 2">
           </div>
           <!-- City Selection -->
           <div class="mb-3">
             <label for="city" class="form-label">City/District</label>
-            <input type="text" class="form-control" id="city" list="cities" placeholder="Type city name..." required>
+            <input type="text" class="form-control" id="city" list="cities" placeholder="Type city name..." name="City" required>
             <datalist id="cities">
               <!-- Cities will be populated dynamically -->
             </datalist>
@@ -143,17 +146,17 @@
           <!-- State (Auto-Filled based on City) -->
           <div class="mb-3">
             <label for="state" class="form-label">State</label>
-            <input type="text" class="form-control" id="state" readonly required>
+            <input type="text" class="form-control" id="state" name="State" placeholder="Enter State name" required>
           </div>
           <!-- Pincode -->
           <div class="mb-3">
             <label for="pincode" class="form-label">Pincode</label>
-            <input type="text" class="form-control" id="pincode" required>
+            <input type="text" class="form-control" id="pincode" name="Pincode" placeholder="Enter Pincode" required>
           </div>
           <!-- Brand Selection -->
           <div class="mb-3">
             <label for="brand" class="form-label">Select Brand</label>
-            <select class="form-select" id="brand">
+            <select class="form-select" id="brand" name="Brand" required>
               <option value="">Select a brand</option>
               <option value="Baxter">Baxter</option>
               <option value="Fresenius">Fresenius</option>
@@ -172,7 +175,7 @@
           <!-- Quantity -->
           <div class="mb-3">
             <label for="quantity" class="form-label">Quantity</label>
-            <select class="form-select" id="quantity">
+            <select class="form-select" id="quantity" name="Quantity">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -189,7 +192,7 @@
           <!-- Message -->
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
+            <textarea class="form-control" id="message" name="Message" placeholder="Enter message" rows="4"></textarea>
           </div>
           <!-- Send Enquiry Button -->
           <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
