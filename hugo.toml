@@ -1,4 +1,4 @@
-baseURL = 'https://tbchealthcare.com/'
+baseURL = 'https://tbchealthcare.tensketch.com/'
 languageCode = 'en-us'
 title = 'TBC Healthcare - Excellence in Healthcare Solutions'
 theme = 'healthcare-theme-hugo'

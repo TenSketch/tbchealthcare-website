@@ -61,13 +61,13 @@
   <div class="container my-5">
     {{ $products := .Resources.Match "*.md" }}
     {{ range $products }}
-    <div class="row my-5 justify-content-around">
+    <div class="row my-5 justify-content-between">
       <!-- Left: Product Image -->
-      <div class="col-md-4 mb-4 mb-md-0">
+      <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
         <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid">
       </div>
       <!-- Right: Product Info -->
-      <div class="col-md-8">
+      <div class="col-md-7">
         <h2>{{ .Title }}</h2>
         {{ .Content }}
         <div class="d-flex align-items-center gap-3 mt-4">
