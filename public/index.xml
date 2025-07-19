@@ -2,102 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on TBC Healthcare - Excellence in Healthcare Solutions</title>
-    <link>https://tbchealthcare.tensketch.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on TBC Healthcare - Excellence in Healthcare Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Sep 2024 20:40:28 +0530</lastBuildDate>
-    <atom:link href="https://tbchealthcare.tensketch.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jul 2025 10:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Baxter</title>
-      <link>https://tbchealthcare.tensketch.com/brands/baxter/</link>
-      <pubDate>Thu, 29 Aug 2024 22:21:44 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/brands/baxter/</guid>
+      <title>TBC Healthcare Products</title>
+      <link>http://localhost:1313/products/tbc-products/</link>
+      <pubDate>Fri, 18 Jul 2025 10:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/products/tbc-products/</guid>
       <description></description>
     </item>
     <item>
-      <title>Fresenius Products</title>
-      <link>https://tbchealthcare.tensketch.com/brands/fresenius/</link>
+      <title>Baxter</title>
+      <link>http://localhost:1313/brands/baxter/</link>
+      <pubDate>Thu, 29 Aug 2024 22:21:44 +0530</pubDate>
+      <guid>http://localhost:1313/brands/baxter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hemodialysis Products</title>
+      <link>http://localhost:1313/brands/hemodialysis/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:28 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/brands/fresenius/</guid>
-      <description>17,962 miles halfway around the world. The amazing journey of a dialysis machine</description>
+      <guid>http://localhost:1313/brands/hemodialysis/</guid>
+      <description>&lt;p&gt;&lt;em&gt;17,962 miles halfway around the world.&#xA;The amazing journey of a dialysis machine&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Johnson</title>
-      <link>https://tbchealthcare.tensketch.com/brands/johnson-and-johnson/</link>
+      <link>http://localhost:1313/brands/johnson-and-johnson/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/brands/johnson-and-johnson/</guid>
+      <guid>http://localhost:1313/brands/johnson-and-johnson/</guid>
       <description></description>
     </item>
     <item>
       <title>Schülke</title>
-      <link>https://tbchealthcare.tensketch.com/brands/schulke/</link>
+      <link>http://localhost:1313/brands/schulke/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/brands/schulke/</guid>
+      <guid>http://localhost:1313/brands/schulke/</guid>
       <description></description>
     </item>
     <item>
       <title>Accessories</title>
-      <link>https://tbchealthcare.tensketch.com/products/accessories/</link>
+      <link>http://localhost:1313/products/accessories/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/products/accessories/</guid>
+      <guid>http://localhost:1313/products/accessories/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>https://tbchealthcare.tensketch.com/about-us/</link>
+      <link>http://localhost:1313/about-us/</link>
       <pubDate>Fri, 06 Sep 2024 20:40:28 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/about-us/</guid>
-      <description>About Us - TBC Healthcare TBC Healthcare has been a trusted leader in the medical distribution industry since its inception in 1996. As an authorized channel partner for leading global brands, including Johnson &amp;amp; Johnson and Baxter, we provide specialized solutions for nephrology and surgical care. With a strong presence across Southern India, we are committed to delivering high-quality medical supplies to dialysis centers and healthcare institutions, ensuring timely and professional service.</description>
+      <guid>http://localhost:1313/about-us/</guid>
+      <description>&lt;h2 id=&#34;about-us---tbc-healthcare&#34;&gt;About Us - TBC Healthcare&lt;/h2&gt;&#xA;&lt;p&gt;TBC Healthcare has been a trusted leader in the medical distribution industry since its inception in 1996. As an authorized channel partner for leading global brands, including Johnson &amp;amp; Johnson and Baxter, we provide specialized solutions for nephrology and surgical care. With a strong presence across Southern India, we are committed to delivering high-quality medical supplies to dialysis centers and healthcare institutions, ensuring timely and professional service. Our experienced team and state-of-the-art logistics infrastructure allow us to offer unparalleled support to the medical community, empowering better healthcare outcomes across the region.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact-us</title>
-      <link>https://tbchealthcare.tensketch.com/contact-us/</link>
+      <link>http://localhost:1313/contact-us/</link>
       <pubDate>Sun, 01 Sep 2024 18:55:13 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/contact-us/</guid>
-      <description>We&amp;rsquo;d love to hear from you! Whether you have a question, need a quote, or just want to chat about your next big idea, we&amp;rsquo;re here to help. Drop us a message, and let&amp;rsquo;s make something amazing happen!</description>
+      <guid>http://localhost:1313/contact-us/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;d love to hear from you! Whether you have a question, need a quote, or just want to chat about your next big idea, we&amp;rsquo;re here to help. Drop us a message, and let&amp;rsquo;s make something amazing happen!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enquiry form</title>
-      <link>https://tbchealthcare.tensketch.com/enquiry/</link>
+      <link>http://localhost:1313/enquiry/</link>
       <pubDate>Sun, 01 Sep 2024 18:55:13 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/enquiry/</guid>
-      <description>Let us know how we can assist you. Fill in your details and select the products or services you’re interested in. We&amp;rsquo;re ready to provide you with the best solutions tailored to your needs. Let’s get started!</description>
+      <guid>http://localhost:1313/enquiry/</guid>
+      <description>&lt;p&gt;Let us know how we can assist you. Fill in your details and select the products or services you’re interested in. We&amp;rsquo;re ready to provide you with the best solutions tailored to your needs. Let’s get started!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thank You</title>
-      <link>https://tbchealthcare.tensketch.com/thank-you/</link>
+      <link>http://localhost:1313/thank-you/</link>
       <pubDate>Mon, 12 Aug 2024 20:32:09 +0530</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/thank-you/</guid>
+      <guid>http://localhost:1313/thank-you/</guid>
       <description></description>
     </item>
     <item>
       <title>Post 3 bala</title>
-      <link>https://tbchealthcare.tensketch.com/posts/post-3/</link>
+      <link>http://localhost:1313/posts/post-3/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/posts/post-3/</guid>
-      <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description>
+      <guid>http://localhost:1313/posts/post-3/</guid>
+      <description>&lt;p&gt;Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 2</title>
-      <link>https://tbchealthcare.tensketch.com/posts/post-2/</link>
+      <link>http://localhost:1313/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/posts/post-2/</guid>
-      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&#xA;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+      <guid>http://localhost:1313/posts/post-2/</guid>
+      <description>&lt;p&gt;Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p&gt;&#xA;&lt;p&gt;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 1</title>
-      <link>https://tbchealthcare.tensketch.com/posts/post-1/</link>
+      <link>http://localhost:1313/posts/post-1/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/posts/post-1/</guid>
-      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
+      <guid>http://localhost:1313/posts/post-1/</guid>
+      <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://tbchealthcare.tensketch.com/cmds/</link>
+      <link>http://localhost:1313/cmds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tbchealthcare.tensketch.com/cmds/</guid>
-      <description>hugo new brands/accessories/Surgical-Handwash.md hugo new brands/accessories/Skin-Cleanser.md hugo new brands/accessories/Handrub-Solution.md hugo new brands/accessories/Blue-Handrub.md hugo new brands/accessories/Ioprep.md hugo new brands/accessories/Tincture.md hugo new brands/accessories/PVP-S.md hugo new brands/accessories/PVP-Surgical-Handwash.md&#xA;hugo new brands/accessories/CATHETER-MAHURKHAR.md hugo new brands/accessories/MULTILUMEN-CATHETER.md hugo new brands/accessories/AVF-NEEDLE.md hugo new brands/accessories/TRANSDUCER-PROTECTOR.md hugo new brands/accessories/Dressing-Kit.md hugo new brands/accessories/Maxid-chronic-catheter.md hugo new brands/accessories/Tal-Palindrome-chronic-catheter.md</description>
+      <guid>http://localhost:1313/cmds/</guid>
+      <description>&lt;p&gt;hugo new brands/accessories/Surgical-Handwash.md&#xA;hugo new brands/accessories/Skin-Cleanser.md&#xA;hugo new brands/accessories/Handrub-Solution.md&#xA;hugo new brands/accessories/Blue-Handrub.md&#xA;hugo new brands/accessories/Ioprep.md&#xA;hugo new brands/accessories/Tincture.md&#xA;hugo new brands/accessories/PVP-S.md&#xA;hugo new brands/accessories/PVP-Surgical-Handwash.md&lt;/p&gt;&#xA;&lt;p&gt;hugo new brands/accessories/CATHETER-MAHURKHAR.md&#xA;hugo new brands/accessories/MULTILUMEN-CATHETER.md&#xA;hugo new brands/accessories/AVF-NEEDLE.md&#xA;hugo new brands/accessories/TRANSDUCER-PROTECTOR.md&#xA;hugo new brands/accessories/Dressing-Kit.md&#xA;hugo new brands/accessories/Maxid-chronic-catheter.md&#xA;hugo new brands/accessories/Tal-Palindrome-chronic-catheter.md&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -8,7 +8,6 @@ description = "The Business Center (TBC Healthcare) offers innovative healthcare
 keywords = "TBC Healthcare, healthcare solutions, Baxter, Continuous Amputated Peritoneal Dialysis, CAPD, Fresenius, Aqua WTU, Aqua B Reverse Osmosis, 5008 Dialysis Machine, 4008 Dialysis Machine-NG, Single-use Dialyser, Blood Tubing, Bibag, PlasmaFlux PSu filters, 4008A dialysis machine, Johnson & Johnson, Cidex Solution, Ethicon Sutures, Ethicon Cutter, Proximate Skin Stapler, Ethicon Prolene Mesh, Schulke, Microshield M4, Microshield M2, Microshield Handrub, Microshield Blue Handrub, Microshield Ioprep, Microshield Tincture, Microshield PVP-S, Microshield PVP, Catheter Mahurkhar, Multilumen Catheter, Transducer Protector, AVF Needle, Dressing Kit, Maxid chronic catheter, Tal Palindrome chronic catheter, medical accessories, healthcare management."
 author = "Balachandiran - TenSketch"
 og_image = "/images/ogimage.png"
-
 [menu]
 
   [[menu.main]]
@@ -22,43 +21,53 @@ og_image = "/images/ogimage.png"
     weight = 2
 
   [[menu.main]]
-    name = "Our Products"
-    identifier = "our-brands"
+    name = "Products"
+    identifier = "products"
     weight = 3
 
-    [[menu.main]] 
-      parent = "our-brands"
-      name = "Baxter"
-      url = "/brands/baxter"
+    # TBC Products Section
+    [[menu.main]]
+      parent = "products"
+      name = "TBC Products"
+      url = "/products/tbc-products"
       weight = 1
 
+    # Partner Brands Section
     [[menu.main]]
-      parent = "our-brands"
-      name = "Fresenius"
-      url = "/brands/fresenius"
+      parent = "products"
+      name = "Baxter"
+      url = "/brands/baxter"
       weight = 2
 
     [[menu.main]]
-      parent = "our-brands"
-      name = "Johnson & Johnson"
-      url = "/brands/johnson-and-johnson"
+      parent = "products"
+      name = "Hemodialysis (HD)"
+      url = "/brands/hemodialysis"
       weight = 3
 
     [[menu.main]]
-      parent = "our-brands"
-      name = "Schulke"
-      url = "/brands/schulke"
+      parent = "products"
+      name = "Johnson & Johnson"
+      url = "/brands/johnson-and-johnson"
       weight = 4
 
-  [[menu.main]]
-    name = "Accessories"
-    url = "/products/accessories"
-    weight = 4
+    [[menu.main]]
+      parent = "products"
+      name = "Schulke"
+      url = "/brands/schulke"
+      weight = 5
+
+    # Accessories Section
+    [[menu.main]]
+      parent = "products"
+      name = "Accessories"
+      url = "/products/accessories"
+      weight = 6
 
   [[menu.main]]
     name = "Enquiry"
     url = "/enquiry"
-    weight = 5
+    weight = 4
 
   [[menu.main]]
     name = "Contact Us"

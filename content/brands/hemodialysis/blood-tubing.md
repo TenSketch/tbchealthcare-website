@@ -1,7 +1,7 @@
 ---
-title: 'Fresenius Blood Tubing'
+title: ' Blood Tubing'
 images: 
-    - "/images/fresenius-blood-tubing.png"
+    - "/images/-blood-tubing.png"
 pdf: "/pdf/Catalogue-Blood_Tubing.pdf"
 cta_link: "/enquiry"
 type: "brands"
@@ -11,7 +11,7 @@ draft: false
 
 <!-- ### Product Description -->
 
-**Fresenius Blood Tubing** is specifically designed to ensure the safe and efficient transfer of blood between the patient and the hemodialysis machine during treatment. Engineered with high-quality materials and precision manufacturing, Fresenius Blood Tubing minimizes the risk of clotting and ensures optimal blood flow, contributing to the overall safety and effectiveness of dialysis procedures. This tubing is an essential component for any dialysis setup, ensuring seamless integration with Fresenius and other compatible dialysis machines.
+**Blood Tubing** is specifically designed to ensure the safe and efficient transfer of blood between the patient and the hemodialysis machine during treatment. Engineered with high-quality materials and precision manufacturing,  Blood Tubing minimizes the risk of clotting and ensures optimal blood flow, contributing to the overall safety and effectiveness of dialysis procedures. This tubing is an essential component for any dialysis setup, ensuring seamless integration with  other compatible dialysis machines.
 
 <!-- ### Key Features
 
@@ -25,7 +25,7 @@ draft: false
 
 - **Hemodialysis Treatment:** Essential for connecting the patient’s vascular access to the hemodialysis machine during treatment.
 - **Critical Care Dialysis:** Suitable for use in intensive care units where dialysis is required for critically ill patients.
-- **Compatible with Various Machines:** Designed to work seamlessly with Fresenius machines and other compatible dialysis systems.
+- **Compatible with Various Machines:** Designed to work seamlessly with  machines and other compatible dialysis systems.
 
 <!-- ### Who Needs This Product?
 

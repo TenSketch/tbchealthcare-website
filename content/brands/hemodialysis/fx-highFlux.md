@@ -11,7 +11,7 @@ draft: false
 
 <!-- ### Product Description -->
 
-The **FX-class High-Flux Dialysers and Haemofilters** by Fresenius Medical Care are advanced, single-use dialysers designed to deliver superior performance in hemodialysis treatments. Built with cutting-edge polysulfone membrane technology, these dialysers provide exceptional clearance of toxins while preserving essential proteins, ensuring safer and more effective dialysis sessions. The FX-class is ideal for healthcare providers who prioritize both patient outcomes and operational efficiency.
+The **FX-class High-Flux Dialysers and Haemofilters** are advanced, single-use dialysers designed to deliver superior performance in hemodialysis treatments. Built with cutting-edge polysulfone membrane technology, these dialysers provide exceptional clearance of toxins while preserving essential proteins, ensuring safer and more effective dialysis sessions. The FX-class is ideal for healthcare providers who prioritize both patient outcomes and operational efficiency.
 
 <!-- ### Key Features
 

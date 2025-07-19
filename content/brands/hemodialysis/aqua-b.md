@@ -11,7 +11,7 @@ draft: false
 
 <!-- ### Product Description -->
 
-The **AquaB Central Reverse Osmosis Water Treatment System** by Fresenius Medical Care is a cutting-edge single-pass reverse osmosis unit, specifically designed to meet the rigorous quality standards of modern dialysis centers. This system ensures a reliable and safe water supply for dialysis operations, incorporating advanced technology and user-friendly controls to optimize performance and safety in clinical settings.
+The **AquaB Central Reverse Osmosis Water Treatment System** is a cutting-edge single-pass reverse osmosis unit, specifically designed to meet the rigorous quality standards of modern dialysis centers. This system ensures a reliable and safe water supply for dialysis operations, incorporating advanced technology and user-friendly controls to optimize performance and safety in clinical settings.
 
 <!-- ### Key Features
 
@@ -19,7 +19,7 @@ The **AquaB Central Reverse Osmosis Water Treatment System** by Fresenius Medica
 - **Semi-Automatic Chemical Disinfection:** Volume-controlled disinfection process for precise, safe, and secure sterilization.
 - **Microprocessor Control Unit:** Offers a user-friendly interface for both manual and automatic operation, ensuring flexibility and ease of use.
 - **Programmable Operation:** Features a fully programmable control with a 7-day calendar, supporting automated start/stop, standby, and auto-rinse functions.
-- **Water-Saving Technology:** Includes Fresenius' patented dynamic water-saving device, significantly reducing water usage and operational costs. -->
+- **Water-Saving Technology:** Includes ' patented dynamic water-saving device, significantly reducing water usage and operational costs. -->
 
 ### Uses
 

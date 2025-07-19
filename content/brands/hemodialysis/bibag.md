@@ -1,5 +1,5 @@
 ---
-title: 'Fresenius bibag® – Dry Bicarbonate Concentrate'
+title: ' bibag® – Dry Bicarbonate Concentrate'
 images: 
     - "/images/bibag.png"
 pdf: "/pdf/Catalogue-bibag.pdf"
@@ -11,13 +11,13 @@ draft: false
 
 <!-- ### Product Description -->
 
-The **Fresenius bibag® – Dry Bicarbonate Concentrate** is an innovative solution designed for dialysis treatments, offering a convenient and reliable method of providing high-purity bicarbonate. This dry concentrate is specially formulated to dissolve easily in dialysis machines, ensuring consistent delivery of bicarbonate to patients. Packaged in a user-friendly bag, bibag® integrates seamlessly with Fresenius hemodialysis systems, optimizing the dialysis process by reducing preparation time and minimizing contamination risks.
+The **bibag® – Dry Bicarbonate Concentrate** is an innovative solution designed for dialysis treatments, offering a convenient and reliable method of providing high-purity bicarbonate. This dry concentrate is specially formulated to dissolve easily in dialysis machines, ensuring consistent delivery of bicarbonate to patients. Packaged in a user-friendly bag, bibag® integrates seamlessly with  hemodialysis systems, optimizing the dialysis process by reducing preparation time and minimizing contamination risks.
 
 <!-- ### Key Features
 
 - **Convenient Bag Design:** User-friendly and easy-to-handle bags designed for simple and quick integration with dialysis machines.
 - **High Purity:** Formulated to provide high-quality bicarbonate for dialysis, ensuring consistent and effective treatment.
-- **Compatibility:** Specifically designed for use with Fresenius Medical Care hemodialysis machines, ensuring a secure and efficient fit.
+- **Compatibility:** Specifically designed for use with hemodialysis machines, ensuring a secure and efficient fit.
 - **Hygienic Solution:** Reduces contamination risk with its closed-system design, maintaining high standards of patient care.
 - **Long Shelf Life:** The dry concentrate format allows for extended storage, making it a reliable choice for dialysis centers. -->
 

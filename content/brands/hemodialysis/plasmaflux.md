@@ -11,7 +11,7 @@ draft: false
 
 <!-- ### Product Description -->
 
-The **PlasmaFlux® PSu filters - P1dry/P2dry** by Fresenius Medical Care are advanced plasma separation filters designed for therapeutic plasma exchange (TPE) and other plasma treatment procedures. These high-performance filters utilize a polysulfone membrane to effectively separate plasma from blood components, ensuring efficient and safe treatment. Available in two models, P1dry and P2dry, these filters offer flexibility to accommodate different patient needs and treatment protocols, while maintaining the highest standards of quality and biocompatibility.
+The **PlasmaFlux® PSu filters - P1dry/P2dry** are advanced plasma separation filters designed for therapeutic plasma exchange (TPE) and other plasma treatment procedures. These high-performance filters utilize a polysulfone membrane to effectively separate plasma from blood components, ensuring efficient and safe treatment. Available in two models, P1dry and P2dry, these filters offer flexibility to accommodate different patient needs and treatment protocols, while maintaining the highest standards of quality and biocompatibility.
 
 <!-- ### Key Features
 

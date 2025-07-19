@@ -11,7 +11,7 @@ draft: false
 
 <!-- ### Product Description -->
 
-The **AquaWTU Compact Water Treatment System** by Fresenius Medical Care is a state-of-the-art reverse osmosis water treatment system engineered for safe and efficient dialysis operations. It is designed to function in both direct feed mode, supporting up to five dialysis machines simultaneously, or with a treated water tank for versatile applications. Housed within a compact, soundproofed frame, the AquaWTU ensures quiet operation and easy portability, making it an ideal choice for diverse dialysis settings.
+The **AquaWTU Compact Water Treatment System** is a state-of-the-art reverse osmosis water treatment system engineered for safe and efficient dialysis operations. It is designed to function in both direct feed mode, supporting up to five dialysis machines simultaneously, or with a treated water tank for versatile applications. Housed within a compact, soundproofed frame, the AquaWTU ensures quiet operation and easy portability, making it an ideal choice for diverse dialysis settings.
 
 <!-- ### Key Features
 
