@@ -5,7 +5,9 @@ images:
   - "/images/CAPD.png"  # Ensure the path is correct and accessible
 pdf: "https://baxterpi.com/pi-pdf/Dianeal_PI.pdf"
 cta_link: "/enquiry"
-type: "brands"
+categories: "brands"
+tags: ["products"]
+
 category: "carousel"
 
 # New front matter for different set of images

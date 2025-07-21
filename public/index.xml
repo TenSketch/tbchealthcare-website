@@ -16,34 +16,6 @@
       <description></description>
     </item>
     <item>
-      <title>Baxter</title>
-      <link>http://localhost:1313/brands/baxter/</link>
-      <pubDate>Thu, 29 Aug 2024 22:21:44 +0530</pubDate>
-      <guid>http://localhost:1313/brands/baxter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hemodialysis Products</title>
-      <link>http://localhost:1313/brands/hemodialysis/</link>
-      <pubDate>Wed, 28 Aug 2024 19:07:28 +0530</pubDate>
-      <guid>http://localhost:1313/brands/hemodialysis/</guid>
-      <description>&lt;p&gt;&lt;em&gt;17,962 miles halfway around the world.&#xA;The amazing journey of a dialysis machine&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Johnson</title>
-      <link>http://localhost:1313/brands/johnson-and-johnson/</link>
-      <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>http://localhost:1313/brands/johnson-and-johnson/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Schülke</title>
-      <link>http://localhost:1313/brands/schulke/</link>
-      <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>http://localhost:1313/brands/schulke/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Accessories</title>
       <link>http://localhost:1313/products/accessories/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
@@ -70,6 +42,27 @@
       <pubDate>Sun, 01 Sep 2024 18:55:13 +0530</pubDate>
       <guid>http://localhost:1313/enquiry/</guid>
       <description>&lt;p&gt;Let us know how we can assist you. Fill in your details and select the products or services you’re interested in. We&amp;rsquo;re ready to provide you with the best solutions tailored to your needs. Let’s get started!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Baxter (Vantive for Kidney Care)</title>
+      <link>http://localhost:1313/brands/baxter/</link>
+      <pubDate>Thu, 29 Aug 2024 22:21:44 +0530</pubDate>
+      <guid>http://localhost:1313/brands/baxter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Johnson&amp;Johnson</title>
+      <link>http://localhost:1313/brands/johnson-and-johnson/</link>
+      <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
+      <guid>http://localhost:1313/brands/johnson-and-johnson/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schülke</title>
+      <link>http://localhost:1313/brands/schulke/</link>
+      <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
+      <guid>http://localhost:1313/brands/schulke/</guid>
+      <description></description>
     </item>
     <item>
       <title>Thank You</title>

@@ -8,9 +8,6 @@
     <loc>http://localhost:1313/brands/baxter/</loc>
     <lastmod>2024-08-29T22:21:44+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/brands/hemodialysis/</loc>
-    <lastmod>2024-08-28T19:07:28+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/brands/johnson-and-johnson/</loc>
     <lastmod>2024-08-28T19:07:29+05:30</lastmod>
   </url><url>
@@ -20,13 +17,10 @@
     <loc>http://localhost:1313/products/accessories/</loc>
     <lastmod>2024-08-28T19:07:29+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/healthcare/</loc>
-    <lastmod>2025-07-18T10:00:00+05:30</lastmod>
+    <loc>http://localhost:1313/products/</loc>
+    <lastmod>2025-08-28T19:07:28+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/products/</loc>
-    <lastmod>2025-07-18T10:00:00+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/products/</loc>
     <lastmod>2025-07-18T10:00:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -44,7 +38,10 @@
     <loc>http://localhost:1313/brands/</loc>
     <lastmod>2024-08-30T00:49:37+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/brands/</loc>
+    <loc>http://localhost:1313/categories/brands/</loc>
+    <lastmod>2024-08-29T22:21:44+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-08-29T22:21:44+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/thank-you/</loc>
@@ -75,7 +72,5 @@
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/cmds/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

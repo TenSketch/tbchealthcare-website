@@ -37,13 +37,13 @@ og_image = "/images/ogimage.png"
       parent = "products"
       name = "Baxter"
       url = "/brands/baxter"
-      weight = 2
+      weight = 3
 
     [[menu.main]]
       parent = "products"
       name = "Hemodialysis (HD)"
-      url = "/brands/hemodialysis"
-      weight = 3
+      url = "/products/hemodialysis"
+      weight = 2
 
     [[menu.main]]
       parent = "products"

@@ -1,12 +1,9 @@
 ---
-title: 'Hemodialysis Products'
-# image: /images/-logo.svg
-tags: ["brands"]
+title: 'Hemodialysis HD'
 description: "A leading provider of healthcare products and services for dialysis, hospital care, and outpatient medical care."
-# website: "https://www..com"
-weight: 2
-type: "brands"
-date: 2024-08-28T19:07:28+05:30
+categories: "brands"
+tags: ["products"]
+date: 2025-08-28T19:07:28+05:30
 draft: false
 ---
 

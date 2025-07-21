@@ -7,8 +7,8 @@ head_office:
   state: "Tamil Nadu"
   country: "India"
 branch_office:
-  address_line1: "No.9, 4th Street, Ground floor"
-  address_line2: "Lake Area, Behind Mattuthvanai Bus Stand"
+  address_line1: "Plot No. 13 & 14, 4th Street"
+  address_line2: "Lake Area, Near Mattuthvanai Bus Stand, Uthangudi Post"
   city: "Madurai"
   postal_code: "625 107"
 contact_numbers:
