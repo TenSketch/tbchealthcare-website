@@ -143,6 +143,7 @@ img {
 .btn-tertiary:hover {
   background-color: var(--tertiary-clr);
   border: 2px solid var(--tertiary-clr);
+  color: var(--white);
 
 }
 
@@ -194,9 +195,9 @@ img {
 
 /* homepage */
 .banner {
-  background: rgba(255, 255, 255, 0.712) url(/images/banner.jpg) fixed no-repeat center/cover;
+  /* background: rgba(255, 255, 255, 0.712) url(/images/banner.jpg) fixed no-repeat center/cover; */
   min-height: calc(100vh - var(--navbar-height));
-  background-blend-mode: overlay;
+  /* background-blend-mode: overlay; */
 
   h1 {
     span {
