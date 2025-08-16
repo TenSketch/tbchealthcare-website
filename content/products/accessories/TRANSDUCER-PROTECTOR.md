@@ -1,9 +1,9 @@
 ---
 title: 'TRANSDUCER PROTECTOR'
 images: 
-    - "/images/transducer_protector.png"
+    - "/images/Accessories/transducer_protector.png"
 cta_link: "/enquiry"
-category: "accessories"
+# category: "accessories"
 date: 2024-09-06T12:45:00+05:30
 draft: false
 ---

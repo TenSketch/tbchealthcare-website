@@ -1,7 +1,7 @@
 ---
 title: 'Schulke Microshield® Loprep'
 images:
-  - "/images/microshield_loprep.png"
+  - "/images/Schulke/microshield_loprep.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

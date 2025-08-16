@@ -1,7 +1,7 @@
 ---
 title: 'Schulke Microshield® 2 Chlorhexidine Skin Cleanser'
 images:
-  - "/images/microshield_2_skin_cleanser.png"
+  - "/images/Schulke/microshield_2_skin_cleanser.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

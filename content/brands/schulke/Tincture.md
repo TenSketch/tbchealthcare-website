@@ -1,7 +1,7 @@
 ---
 title: 'Schulke MICROSHIELD® Tincture'
 images:
-  - "/images/microshield_tincture.png"
+  - "/images/Schulke/microshield_tincture.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

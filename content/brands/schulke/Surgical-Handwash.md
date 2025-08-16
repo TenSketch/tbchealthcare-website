@@ -1,7 +1,7 @@
 ---
 title: 'Schulke MICROSHIELD® 4 Chlorhexidine Surgical Handwash'
 images:
-  - "/images/microshield_4_surgical_handwash.png"
+  - "/images/Schulke/microshield_4_surgical_handwash.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

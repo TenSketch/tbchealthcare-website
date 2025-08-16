@@ -1,9 +1,9 @@
 ---
 title: 'CATHETER - MAHURKHAR'
 images: 
-    - "/images/catheter_mahurkhar.png"
+    - "/images/Accessories/MAHURKHAR_Catheter.png"
 cta_link: "/enquiry"
-category: "accessories"
+# category: "accessories"
 date: 2024-09-06T12:00:00+05:30
 draft: false
 ---

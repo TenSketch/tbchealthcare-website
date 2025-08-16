@@ -1,7 +1,7 @@
 ---
 title: 'Schulke MICROSHIELD® Handrub Solution'
 images:
-  - "/images/microshield_handrub_solution.png"
+  - "/images/Schulke/microshield_handrub_solution.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

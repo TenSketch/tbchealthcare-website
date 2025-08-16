@@ -1,7 +1,7 @@
 ---
 title: 'Schulke Microshield® PVP Povidone-Iodine Surgical Handwash'
 images:
-  - "/images/microshield_pvp_handwash.png"
+  - "/images/Schulke/microshield_pvp_handwash.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

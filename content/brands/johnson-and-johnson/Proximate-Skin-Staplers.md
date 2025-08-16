@@ -1,7 +1,7 @@
 ---
 title: 'Johnson & Johnson Proximate Skin Staplers'
 images:
-  - "/images/proximate_skin_staplers.png"
+  - "/images/Jhonson/proximate_skin_staplers.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

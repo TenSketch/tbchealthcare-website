@@ -2,7 +2,7 @@
 title: "Continuous Ambulatory Peritoneal Dialysis (CAPD)"
 description: "Dianeal Ambuflex is indicated for patients with chronic renal failure."
 images:
-  - "/images/CAPD.png"  # Ensure the path is correct and accessible
+  - "/images/Baxter/CAPD.png"  # Ensure the path is correct and accessible
 pdf: "https://baxterpi.com/pi-pdf/Dianeal_PI.pdf"
 cta_link: "/enquiry"
 categories: "brands"

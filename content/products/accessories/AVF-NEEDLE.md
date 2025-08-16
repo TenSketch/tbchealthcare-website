@@ -1,9 +1,9 @@
 ---
 title: 'AVF NEEDLE'
 images: 
-    - "/images/avf_needle.png"
+    - "/images/Accessories/AVF_needle.png"
 cta_link: "/enquiry"
-type: "brands"
+# type: "brands"
 date: 2024-09-06T12:30:00+05:30
 draft: false
 ---

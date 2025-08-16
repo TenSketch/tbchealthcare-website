@@ -1,7 +1,7 @@
 ---
 title: 'Johnson & Johnson ETHICON Cutter'
 images:
-  - "/images/ethicon_cutter.png"
+  - "/images/Jhonson/ethicon_cutter.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

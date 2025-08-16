@@ -1,7 +1,7 @@
 ---
 title: 'Johnson & Johnson ETHICON PROLENE Mesh'
 images:
-  - "/images/ethicon_prolene_mesh.png"
+  - "/images/Jhonson/ethicon_prolene_mesh.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

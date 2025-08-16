@@ -1,9 +1,9 @@
 ---
 title: 'MULTILUMEN CATHETER'
 images: 
-    - "/images/multilumen_catheter.png"
+    - "/images/Accessories/Multi_lumen.png"
 cta_link: "/enquiry"
-category: "accessories"
+# category: "accessories"
 date: 2024-09-06T12:15:00+05:30
 draft: false
 ---

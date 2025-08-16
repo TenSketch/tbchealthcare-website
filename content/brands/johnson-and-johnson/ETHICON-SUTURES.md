@@ -1,7 +1,7 @@
 ---
 title: 'Johnson & Johnson ETHICON Sutures'
 images:
-  - "/images/ethicon_sutures.png"
+  - "/images/Jhonson/ethicon_sutures.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

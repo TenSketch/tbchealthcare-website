@@ -1,7 +1,7 @@
 ---
 title: 'Johnson & Johnson CIDEX Solution'
 images:
-  - "/images/cidex_solution.png"
+  - "/images/Jhonson/cidex_solution.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

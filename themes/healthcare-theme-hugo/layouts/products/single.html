@@ -1,26 +1,26 @@
 {{ define "main" }}
 
-<!-- accessories page -->
+<!-- products page -->
 <section class="brand-products-list container my-5">
-    <div class="container my-5">
-        <section class="brand-products-list container my-5"><div class="container my-5">
-  {{ range where (.Resources.Match "*.md") "Draft" "ne" true }}
+  <div class="container my-5">
+    {{ $products := .Resources.Match "*.md" }}
+    {{ range $products }}
     <div class="row my-5 justify-content-between">
       <!-- Left: Product Image -->
-      <div class="col-md-4 mb-4 mb-md-0">
+      <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
         <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid">
       </div>
       <!-- Right: Product Info -->
       <div class="col-md-7">
         <h2>{{ .Title }}</h2>
         {{ .Content }}
-        <a href="{{ .Params.cta_link }}" class="btn btn-success">Enquire Now</a>
-        <!-- <a href="{{ .Permalink }}" class="btn btn-tertiary ms-3">Read more</a> -->
+        <div class="d-flex align-items-center gap-3 mt-4">
+          <a href="{{ .Params.cta_link }}" target="_blank" rel="noopener" class="btn btn-primary">Enquire Now</a>
+          <a href="{{ .Params.pdf }}" target="_blank" rel="noopener" class="btn btn-primary-outline">View Catalogue</a>
+        </div>
       </div>
     </div>
-  {{ end }}
-</div>
-</section>
-    </div>
+    {{ end }}
+  </div>
 </section>
 {{ end }}

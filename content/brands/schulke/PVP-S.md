@@ -1,7 +1,7 @@
 ---
 title: 'Schulke Microshield® PVP-S'
 images:
-  - "/images/microshield_pvp_s.png"
+  - "/images/Schulke/microshield_pvp_s.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"

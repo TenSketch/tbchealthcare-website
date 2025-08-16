@@ -1,9 +1,9 @@
 ---
 title: 'Tal Palindrome Chronic Catheter'
 images: 
-    - "/images/tal_palindrome_catheter.png"
+    - "/images/Accessories/tal_palindrome_catheter.png"
 cta_link: "/enquiry"
-category: "accessories"
+# category: "accessories"
 date: 2024-09-06T13:30:00+05:30
 draft: false
 ---

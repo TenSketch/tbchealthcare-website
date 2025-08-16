@@ -102,7 +102,7 @@
     <div class="container">
         <h1 class="text-center section-heading mb-3">Brands we deal</h1>
 
-        <div class="row">
+        <div class="row justify-content-around">
             {{ range (index .Site.Taxonomies.categories "brands").Pages }}
             
             <div class="col-lg-3 col-md-6 mb-4">

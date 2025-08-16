@@ -1,7 +1,7 @@
 ---
 title: 'Schulke Microshield® Blue Handrub'
 images:
-  - "/images/microshield_blue_handrub.png"
+  - "/images/Schulke/microshield_blue_handrub.png"
 pdf: ""
 cta_link: "/enquiry"
 type: "brands"
@@ -18,7 +18,7 @@ draft: false
 - **Alcohol-Based Formula:** Effective against a broad range of microorganisms, including bacteria, fungi, and viruses.
 - **Blue Dye for Visibility:** Ensures thorough hand coverage and reduces the chance of missed areas.
 - **Quick-Drying:** Dries quickly without leaving a sticky residue.
-- **Moisturizing Properties:** Contains emollients to protect hands from dryness.
+- **Moisturizing Properties:** Contains emollients to protect hands from dryness.s
 - **Convenient Packaging:** Available in easy-to-use dispensers for rapid access. -->
 
 ### Uses

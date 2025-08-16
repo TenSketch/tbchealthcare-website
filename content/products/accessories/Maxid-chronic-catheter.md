@@ -1,9 +1,9 @@
 ---
 title: 'Maxid Chronic Catheter'
 images: 
-    - "/images/maxid_chronic_catheter.png"
+    - "/images/Accessories/maxid_chronic_catheter.png"
 cta_link: "/enquiry"
-category: "accessories"
+# category: "accessories"
 date: 2024-09-06T13:15:00+05:30
 draft: false
 ---
