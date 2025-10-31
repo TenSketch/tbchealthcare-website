@@ -2,7 +2,7 @@
 title: 'TBC Dressing Kit'
 images: 
   - "/images/TBC-Products/Dressing-KIT-wrapper.jpg"
-attribution: "Designed by TBC Healthcare"
+attribution: "Designed by The business centre"
 cta_link: "/enquiry"
 # category: "accessories"
 date: 2024-09-06T13:00:00+05:30

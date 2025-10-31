@@ -2,7 +2,7 @@
 title: 'TBC Dialysis Kit'
 images: 
   - "/images/TBC-Products/dialysis-kit.png"
-attribution: "Designed by TBC Healthcare"
+attribution: "Designed by The business centre"
 cta_link: "/enquiry"
 # category: "accessories"
 date: 2024-09-06T13:00:00+05:30
@@ -25,9 +25,10 @@ A comprehensive all-in-one dialysis kit featuring leading multinational brands, 
 - Heparin (25000/5000) IU  
 - Transducer Protector  
 - Citrosteril machine disinfection.
-- Acid & Bibag
+- Acid & Bicarb
 - Puresterile Disinfection for Consumbles
 - Bleach
+- Dressing Kit
 
 ### Uses
 
@@ -35,8 +36,8 @@ Optimized for hemodialysis procedures in hospitals, nephrology clinics, and dial
 
 ### Who Needs This Product?
 
-Dialysis care centers, hospitals running in-house renal units, and distributors looking for customizable packs.
-
+Stand alone Dialysis centers, and distributors looking for customizable packs.
+ 
 ### Benefits
 
 - ✅ Fully Customizable to suit your clinical protocol  

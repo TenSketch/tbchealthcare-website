@@ -16,7 +16,7 @@ contact_numbers:
     label: "Contact for Dialyzers/Hemodialyzers"
     numbers:
       - "04524370200"
-      - "04524370300"
+      # - "04524370300"
   surgicals_sutures:
     label: "Contact for Surgicals/Sutures"
     numbers:

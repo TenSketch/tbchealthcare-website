@@ -1,5 +1,5 @@
 ---
-title: 'Johnson&Johnson'
+title: 'Johnson & Johnson'
 tags: ["brands"]
 description: "A multinational corporation renowned for its pharmaceuticals, medical devices, and consumer health products."
 website: "https://www.jnjmedtech.com/en-US/companies/ethicon"
