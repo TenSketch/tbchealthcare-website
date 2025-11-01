@@ -44,44 +44,33 @@
       </div>
       <div class="col-md-6 mt-5 mt-md-0">
         <form name="contact" action="/thank-you" method="POST" netlify>
+
           <!-- Name -->
           <div class="mb-3">
-            <label for="Name" class="form-label">Name</label>
+            <label for="Name" class="form-label">Name <span class="required-star">*</span></label>
             <input type="text" class="form-control" id="Name" name="Name" required>
           </div>
-          <!-- Last Name -->
-          <!-- <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" required>
-          </div> -->
+
           <!-- Mobile Number -->
           <div class="mb-3">
-            <label for="mobile" class="form-label">Contact Number</label>
-            <!-- <input type="tel" class="form-control" id="mobile" name="Mobile"  placeholder="your 10 digit mobile no."
-            aria-label="mobile" minlength="10" maxlength="10" autocomplete="off"required> -->
-            <input 
-  type="tel" 
-  class="form-control" 
-  id="mobile" 
-  name="Mobile"
-  aria-label="mobile"
-  pattern="^\+?[0-9\s\-]{7,15}$"
-  title="Enter a valid phone number with country code (e.g. +91 9876543210)"
-  autocomplete="tel"
-  required>
-
+            <label for="mobile" class="form-label">Contact Number <span class="required-star">*</span></label>
+            <input type="tel" class="form-control" id="mobile" name="Mobile" aria-label="mobile"
+              pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number with country code (e.g. +91 9876543210)"
+              autocomplete="tel" required>
           </div>
+
           <!-- Email -->
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="Email" required>
+            <input type="email" class="form-control" id="email" name="Email">
           </div>
+
           <!-- Message -->
           <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="Message" rows="4"></textarea>
+            <label for="message" class="form-label">Message <span class="required-star">*</span></label>
+            <textarea class="form-control" id="message" name="Message" rows="4" required></textarea>
           </div>
-          <!-- Send Enquiry Button -->
+
           <button type="submit" class="btn btn-tertiary w-100">Send</button>
         </form>
       </div>
@@ -93,123 +82,109 @@
   <section class="enquiry-form">
     <h1 class="text-center mb-5">{{ .Params.sectionTitle }}</h1>
 
-    <div class="row justify-content-between align-items-center my-5 mx-2">
+    <!-- <div class="row justify-content-between align-items-center my-5 mx-2">
       {{ range sort .Site.Taxonomies.tags.products.Pages "Weight" }}
       <div class="col-md-3 card brand-card p-3 my-3 my-md-0 text-center">
   <h3 class="brand-highlight">{{ .Title }}</h3>
 
-        <!-- <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo"> -->
-        <!-- <div class="card-body">
+        <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo">
+        <div class="card-body">
           <h5 class="card-title">{{ .Title }}</h5>
           <p class="card-text">{{ .Params.description }}</p>
           <div class="d-flex justify-content-center">
             <a href="{{ .Permalink }}" class="btn btn-tertiary">Read more</a>
           </div>
-        </div> -->
+        </div>
       </div>
       {{ end }}
-    </div>
+    </div> -->
     <div class="row justify-content-between pt-5">
       <div class="col-md-5">
         <h5 class="mb-4"> {{ .Content }}</h5>
         <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
       </div>
       <div class="col-md-6">
+        <style>
+          .required-star {
+            color: red;
+          }
+        </style>
+
         <form name="enquiry" action="/thank-you" method="POST" netlify>
+
           <!-- Name -->
           <div class="mb-3">
-            <label for="Name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter your name"
-            aria-label="Name" autocomplete="off" required>
+            <label for="Name" class="form-label">Name <span class="required-star">*</span></label>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Your name" autocomplete="off"
+              required>
           </div>
-          <!-- Last Name -->
-          <!-- <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" required>
-          </div> -->
-          <!-- Mobile Number -->
+
+          <!-- Phone -->
           <div class="mb-3">
-            <label for="mobile" class="form-label">Mobile Number</label>
-            <input type="tel" class="form-control" id="mobile" name="Mobile" placeholder="your 10 digit mobile no."
-            aria-label="mobile" minlength="10" maxlength="10" autocomplete="off" required>
+            <label for="mobile" class="form-label">Contact Number <span class="required-star">*</span></label>
+            <input type="tel" class="form-control" id="mobile" name="Mobile" placeholder="e.g. +91 9876543210"
+              pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number with country code" autocomplete="tel"
+              required>
+              
           </div>
-          <!-- Email -->
+
+          <!-- Email (optional) -->
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="Email" placeholder="abc@somemail.com" aria-label="email" autocomplete="off" required>
+            <label for="email" class="form-label">Email (Optional)</label>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="abc@somemail.com"
+              autocomplete="off">
           </div>
-          <!-- Address Line 1 -->
+
+          <!-- Simple Address (single field, optional) -->
           <div class="mb-3">
-            <label for="address1" class="form-label">Address Line 1</label>
-            <input type="text" class="form-control" id="address1" name="Address line 1" placeholder="Enter address line 1" required>
+            <label for="address" class="form-label">Address (Optional)</label>
+            <input type="text" class="form-control" id="address" name="Address"
+              placeholder="Door/Street, City – Pincode">
+            <div class="form-text">Just a rough location is fine. We’ll confirm on call.</div>
           </div>
-          <!-- Address Line 2 -->
+
+          <!-- Brand (required) -->
           <div class="mb-3">
-            <label for="address2" class="form-label">Address Line 2 (Optional)</label>
-            <input type="text" class="form-control" id="address2" name="Address line 2">
-          </div>
-          <!-- City Selection -->
-          <div class="mb-3">
-            <label for="city" class="form-label">City/District</label>
-            <input type="text" class="form-control" id="city" list="cities" placeholder="Type city name..." name="City" required>
-            <datalist id="cities">
-              <!-- Cities will be populated dynamically -->
-            </datalist>
-          </div>
-          <!-- State (Auto-Filled based on City) -->
-          <div class="mb-3">
-            <label for="state" class="form-label">State</label>
-            <input type="text" class="form-control" id="state" name="State" placeholder="Enter State name" required>
-          </div>
-          <!-- Pincode -->
-          <div class="mb-3">
-            <label for="pincode" class="form-label">Pincode</label>
-            <input type="text" class="form-control" id="pincode" name="Pincode" placeholder="Enter Pincode" required>
-          </div>
-          <!-- Brand Selection -->
-          <div class="mb-3">
-            <label for="brand" class="form-label">Select Brand</label>
+            <label for="brand" class="form-label">Brand / Category <span class="required-star">*</span></label>
             <select class="form-select" id="brand" name="Brand" required>
-              <option value="">Select a brand</option>
+              <option value="">Select one</option>
               <option value="Baxter">Baxter</option>
-              <option value="Fresenius">Heamodialysis</option>
+              <option value="Fresenius">Hemodialysis</option>
               <option value="Johnson">Johnson & Johnson</option>
               <option value="Schulke">Schulke</option>
               <option value="Accessories">Accessories</option>
             </select>
           </div>
-          <!-- Products based on Brand -->
+
+          <!-- Product (required) — script fills options -->
+          <!-- Product (required) — script fills options -->
           <div class="mb-3">
-            <label for="products" class="form-label">Products</label>
-            <select class="form-select" id="products">
-              <!-- Options will be dynamically populated -->
+            <label for="products" class="form-label">Product <span class="required-star">*</span></label>
+            <select class="form-select" id="products" name="Product" required>
+              <option value="" disabled selected>Select brand/category first to view products</option>
             </select>
           </div>
+
+
+
           <!-- Quantity -->
           <div class="mb-3">
-            <label for="quantity" class="form-label">Quantity</label>
-            <select class="form-select" id="quantity" name="Quantity">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <!-- More quantities as needed -->
-            </select>
+            <label for="quantity" class="form-label">Quantity <span class="required-star">*</span></label>
+            <input type="number" class="form-control" id="quantity" name="Quantity" min="1" max="999" step="1"
+              value="10" required>
           </div>
+
+
           <!-- Message -->
           <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="Message" placeholder="Enter message" rows="4"></textarea>
+            <label for="message" class="form-label">Message (Optional)</label>
+            <textarea class="form-control" id="message" name="Message" rows="3"
+              placeholder="Any specific sizes, brands, delivery date?"></textarea>
           </div>
-          <!-- Send Enquiry Button -->
+
           <button type="submit" class="btn btn-tertiary w-100">Send Enquiry</button>
         </form>
+
       </div>
     </div>
   </section>

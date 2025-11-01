@@ -72,7 +72,8 @@ img {
 .bg-light {
   background-color: var(--light-clr) !important;
 }
-.section-heading{
+
+.section-heading {
   font-size: 2.5rem;
   color: var(--primary-clr);
 }
@@ -81,6 +82,12 @@ img {
   color: var(--primary-clr);
   font-size: 1.8rem;
   /* font-weight: 700; */
+}
+label {
+  font-weight: 600;
+}
+.required-star {
+  color: red;
 }
 
 .btn {
@@ -93,9 +100,11 @@ img {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1),
     -2px -2px 6px rgba(255, 255, 255, 0.7);
   transition: all 350ms ease;
-  @media(max-width:600px){
+
+  @media(max-width:600px) {
     font-size: 0.9rem;
   }
+
   &:hover {
     background-color: none;
     opacity: 0.8;
@@ -158,7 +167,8 @@ img {
     color: var(--white);
   }
 }
-.form-control{
+
+.form-control {
   border-radius: 0;
 }
 
@@ -272,7 +282,7 @@ img {
   .left {
     .timeline-content {
       &::after {
-        content: "\f0f3";
+        /* content: "\f0f3"; */
         /* Font Awesome icon (fa-bell) */
         right: -102px;
       }
