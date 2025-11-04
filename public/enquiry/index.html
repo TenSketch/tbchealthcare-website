@@ -119,7 +119,7 @@
 <div class="container my-5 py-5">
   
   
-  <p class="text-end"><strong>Today:</strong> <time datetime="2025-11-04T00:58:41&#43;05:30">November 4, 2025</time></p>
+  <p class="text-end"><strong>Today:</strong> <time datetime="2025-11-04T18:19:42&#43;05:30">November 4, 2025</time></p>
 
   
   
@@ -160,7 +160,7 @@
             <input type="tel" class="form-control" id="mobile" name="Mobile" placeholder="e.g. +91 9876543210"
               pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number with country code" autocomplete="tel"
               required>
-              
+
           </div>
 
           
@@ -179,33 +179,31 @@
           </div>
 
           
+          
+
+          
+          
+
+          
           <div class="mb-3">
             <label for="brand" class="form-label">Brand / Category <span class="required-star">*</span></label>
-            <select class="form-select" id="brand" name="Brand" required>
-              <option value="">Select one</option>
-              <option value="Baxter">Baxter</option>
-              <option value="Fresenius">Hemodialysis</option>
-              <option value="Johnson">Johnson & Johnson</option>
-              <option value="Schulke">Schulke</option>
-              <option value="Accessories">Accessories</option>
-            </select>
+            <input type="text" class="form-control" id="brand" name="Brand"
+              placeholder="e.g. Baxter, Hemodialysis, Schulke..." required>
           </div>
 
           
           <div class="mb-3">
             <label for="products" class="form-label">Product <span class="required-star">*</span></label>
-            <select class="form-select" id="products" name="Product" required>
-              <option value="" disabled selected>Select brand/category first to view products</option>
-            </select>
+            <input type="text" class="form-control" id="products" name="Product"
+              placeholder="e.g. Dialysis Kit, AVF Needle..." required>
           </div>
-
 
 
           
           <div class="mb-3">
             <label for="quantity" class="form-label">Quantity <span class="required-star">*</span></label>
             <input type="number" class="form-control" id="quantity" name="Quantity" min="1" max="999" step="1"
-              value="10" required>
+              placeholder="10" required>
           </div>
 
 
@@ -213,7 +211,7 @@
           <div class="mb-3">
             <label for="message" class="form-label">Message (Optional)</label>
             <textarea class="form-control" id="message" name="Message" rows="3"
-              placeholder="Any specific sizes, brands, delivery date?"></textarea>
+              placeholder="Your requirement brief.."></textarea>
           </div>
 
           <button type="submit" class="btn btn-tertiary w-100">Send Enquiry</button>
@@ -222,67 +220,7 @@
       </div>
     </div>
   </section>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      
-      const productsByBrand = {
-        'Baxter': ['Continuous Ambulatory Peritoneal Dialysis (CAPD)'],
-        'Fresenius': [
-          '4008A Hemodialysis Machine',
-          '4008S Next Generation Hemodialysis Machine',
-          '5008S Hemodialysis Machine',
-          'AquaB Central Reverse Osmosis Water Treatment System',
-          'AquaWTU Compact Water Treatment System',
-          'Bibag® – Dry Bicarbonate Concentrate',
-          'Blood Tubing',
-          'FX-class High-Flux Dialysers and Haemofilters',
-          'PlasmaFlux® PSu filters - P1dry/P2dry'
-        ],
-        'Johnson': [
-          'CIDEX SOLUTION',
-          'ETHICON SUTURES',
-          'ETHICON CUTTER',
-          'Proximate Skin Staplers',
-          'ETHICON PROLENE MESH'
-        ],
-        'Schulke': [
-          'MICROSHIELD® 4 Chlorhexidine Surgical Handwash',
-          'Microshield® 2 Chlorhexidine Skin Cleanser',
-          'MICROSHIELD® Handrub Solution',
-          'Microshield® Blue Handrub',
-          'Microshield® Ioprep',
-          'MICROSHIELD® Tincture',
-          'Microshield® PVP-S',
-          'Microshield® PVP Povidone-Iodine Surgical Handwash'
-        ],
-        'Accessories': [
-          'CATHETER -MAHURKHAR',
-          'MULTILUMEN CATHETER',
-          'AVF NEEDLE',
-          'TRANSDUCER PROTECTOR',
-          'Dressing Kit',
-          'Maxid chronic catheter',
-          'Tal Palindrome chronic catheter'
-        ]
-      };
-
-      const brandSelect = document.getElementById('brand');
-      const productsSelect = document.getElementById('products');
-
-      brandSelect.addEventListener('change', function () {
-        const selectedBrand = brandSelect.value;
-        const products = productsByBrand[selectedBrand] || [];
-        productsSelect.innerHTML = ''; 
-
-        products.forEach(function (product) {
-          const option = document.createElement('option');
-          option.value = product;
-          option.text = product;
-          productsSelect.appendChild(option);
-        });
-      });
-    });
-  </script>
+  
   
 
   
