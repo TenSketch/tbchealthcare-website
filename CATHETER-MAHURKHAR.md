@@ -6,6 +6,10 @@ cta_link: "/enquiry"
 # category: "accessories"
 date: 2024-09-06T12:00:00+05:30
 draft: false
+_build:
+  list: false
+  publishResources: false
+  render: never
 ---
 
 <!-- ### Product Description -->

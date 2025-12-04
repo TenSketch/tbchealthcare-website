@@ -23,7 +23,7 @@
   </ul>
 </li>
 {{- else -}}
-<li class="{{ $class }}">
+<!-- <li class="{{ $class }}">
   <a {{- range $k, $v :=$attrs -}} {{- with $v -}} {{- printf " %s=%q" $k $v | safeHTMLAttr -}} {{- end -}} {{- end -}}>
     {{ if in .URL "wa.me" }}
     <img src="/images/whatsapp.png" alt="WhatsApp" style="width:22px;height:22px;">
@@ -31,6 +31,16 @@
     {{ .Name }}
     {{ end }}
   </a>
+</li> -->
+<li class="{{ $class }}">
+  <a {{- range $k, $v :=$attrs -}} {{- with $v -}} {{- printf " %s=%q" $k $v | safeHTMLAttr -}} {{- end -}} {{- end -}}>
+    {{ if in .URL "tel:" }}
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    {{ else }}
+    {{ .Name }}
+    {{ end }}
+  </a>
 </li>
+
 {{- end -}}
 {{- end -}}

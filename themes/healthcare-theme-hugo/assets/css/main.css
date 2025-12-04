@@ -519,3 +519,21 @@ el */ .brand-products-carousel .carousel-inner {
     margin-bottom: 20px;
   }
 }
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
