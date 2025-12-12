@@ -6,27 +6,13 @@
     <description>Recent content in Brands on The business centre - Excellence in Healthcare Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2024 22:21:44 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 19:07:29 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/brands/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Baxter (Vantive for Kidney Care)</title>
-      <link>http://localhost:1313/brands/baxter/</link>
-      <pubDate>Thu, 29 Aug 2024 22:21:44 +0530</pubDate>
-      <guid>http://localhost:1313/brands/baxter/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Johnson &amp; Johnson</title>
-      <link>http://localhost:1313/brands/johnson-and-johnson/</link>
+      <link>http://localhost:1313/products/surgicals/</link>
       <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>http://localhost:1313/brands/johnson-and-johnson/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Schülke</title>
-      <link>http://localhost:1313/brands/schulke/</link>
-      <pubDate>Wed, 28 Aug 2024 19:07:29 +0530</pubDate>
-      <guid>http://localhost:1313/brands/schulke/</guid>
+      <guid>http://localhost:1313/products/surgicals/</guid>
       <description></description>
     </item>
   </channel>

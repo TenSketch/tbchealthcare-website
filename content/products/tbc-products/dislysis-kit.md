@@ -4,7 +4,6 @@ images:
   - "/images/TBC-Products/dialysis-kit.png"
 attribution: "Designed by The business centre"
 cta_link: "/enquiry"
-# category: "accessories"
 date: 2024-09-06T13:00:00+05:30
 draft: false
 ---

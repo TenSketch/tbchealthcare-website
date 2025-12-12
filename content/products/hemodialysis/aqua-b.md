@@ -4,7 +4,6 @@ images:
     - "/images/Hemodialysis_Machine/AquaB-ai.png"
 pdf: "/pdf/Catalogue-AquaB.pdf"
 cta_link: "/enquiry"
-# type: "brands"
 date: 2024-09-03T13:00:18+05:30
 draft: false
 ---

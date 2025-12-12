@@ -31,32 +31,24 @@ og_image = "/images/ogimage.png"
       name = "TBC Products"
       url = "/products/tbc-products"
       weight = 1
-
-    # Partner Brands Section
+    
     [[menu.main]]
       parent = "products"
-      name = "Baxter"
-      url = "/brands/baxter"
+      name = "Hemodialysis (HD)"
+      url = "/products/hemodialysis"
+      weight = 2
+
+    [[menu.main]]
+      parent = "products"
+      name = "Vantive"
+      url = "/products/vantive"
       weight = 3
 
     [[menu.main]]
       parent = "products"
-      name = "Johnson & Johnson"
-      url = "/brands/johnson-and-johnson"
+      name = "Surgicals"
+      url = "/products/surgicals"
       weight = 4
-
-    [[menu.main]]
-      parent = "products"
-      name = "Schulke"
-      url = "/brands/schulke"
-      weight = 5
-
-    # Accessories Section
-    [[menu.main]]
-      parent = "products"
-      name = "Accessories"
-      url = "/products/accessories"
-      weight = 6
 
   [[menu.main]]
     name = "Enquiry"

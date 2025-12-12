@@ -4,7 +4,6 @@ images:
     - "/images/Hemodialysis_Machine/AquaWTU-ai.png"
 pdf: "/pdf/Catalogue-Aqua-WTU.pdf"
 cta_link: "/enquiry"
-# type: "brands"
 date: 2024-09-02T13:00:18+05:30
 draft: false
 ---
