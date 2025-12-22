@@ -3,6 +3,7 @@ title: 'TBC Dialysis Kit'
 images: 
   - "/images/TBC-Products/dialysis-kit.png"
 attribution: "Designed by The business centre"
+pdf: "/pdf/TBC_Dialysis_kit_Brochure.pdf"
 cta_link: "/enquiry"
 date: 2024-09-06T13:00:00+05:30
 draft: false
@@ -25,7 +26,7 @@ A comprehensive all-in-one dialysis kit featuring leading multinational brands, 
 - Transducer Protector  
 - Citrosteril machine disinfection.
 - Acid & Bicarb
-- Puresterile Disinfection for Consumbles
+- Sterile Disinfection for Consumbles
 - Bleach
 - Dressing Kit
 

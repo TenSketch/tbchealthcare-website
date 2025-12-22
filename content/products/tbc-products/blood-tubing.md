@@ -2,7 +2,7 @@
 title: ' Blood Tubing'
 images: 
     - "/images/Hemodialysis_Machine/blood-tubing-new.png"
-pdf: "/pdf/Catalogue-Blood_Tubing.pdf"
+# pdf: "/pdf/Catalogue-Blood_Tubing.pdf"
 cta_link: "/enquiry"
 date: 2024-08-31T13:00:18+05:30
 draft: false
