@@ -6,7 +6,7 @@ draft: false
 # Management Team (Using Arrays)
 management:
   - name: "VK. Nesheed Kumar"
-    role: "Managing Partner"
+    role: "Partner"
     about: "He achieved 2nd place in overall sales for the Chennai region within the first few years of operation. With over 30 years of experience in the medical and healthcare industry, he handles tasks and challenges with professionalism and expertise, bringing a dynamic approach to his work."
     # img: "/images/Nesheed.jpg"
   - name: "VK. Vikram"
