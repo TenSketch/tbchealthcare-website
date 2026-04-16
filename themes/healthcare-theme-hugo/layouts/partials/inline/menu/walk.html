@@ -16,7 +16,10 @@
 <li class="nav-item dropdown">
   <a {{- range $k, $v :=$attrs -}} {{- with $v -}} {{- printf " %s=%q" $k $v | safeHTMLAttr -}} {{- end -}} {{- end -}}
     class="nav-link dropdown-toggle" id="navbarDropdown-{{ .Name | urlize }}" role="button" data-bs-toggle="dropdown"
-    aria-expanded="false">{{ .Name }}</a>
+    aria-expanded="false">
+    <span class="nav-dropdown-label">{{ .Name }}</span>
+    <span class="dropdown-caret" aria-hidden="true"><i class="fa fa-chevron-down"></i></span>
+  </a>
 
   <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ .Name | urlize }}">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .Children) -}}
@@ -34,11 +37,7 @@
 </li> -->
 <li class="{{ $class }}">
   <a {{- range $k, $v :=$attrs -}} {{- with $v -}} {{- printf " %s=%q" $k $v | safeHTMLAttr -}} {{- end -}} {{- end -}}>
-    {{ if in .URL "tel:" }}
-    <i class="fa fa-phone" aria-hidden="true"></i>
-    {{ else }}
     {{ .Name }}
-    {{ end }}
   </a>
 </li>
 

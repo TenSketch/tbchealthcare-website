@@ -1,3 +1,4 @@
+ignoreLogs = ['warning-goldmark-raw-html']
 baseURL = 'https://tbchealthcare.tensketch.com/'
 languageCode = 'en-us'
 title = 'The business centre - Excellence in Healthcare Solutions'
@@ -60,8 +61,3 @@ og_image = "/images/ogimage.png"
     url = "/contact-us"
     weight = 5
   
-  [[menu.main]]
-    name = ""
-    url = "tel:+919841289420"
-    weight = 6
-

@@ -1,263 +1,229 @@
 {{ define "main" }}
-<!-- <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      {{ range .Site.RegularPages.ByWeight }}
-      <div class="carousel-item {{ if eq .Params.weight 1 }}active{{ end }}">
-        <img src="{{ .Params.image }}" class="d-block w-100" alt="{{ .Title }}">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ .Title }}</h5>
-          <p>{{ .Params.description }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#companyCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-<!-- <section class="banner d-flex align-items-center justify-content-center">
-    <div class="container">
-        <h1 class="display-4 text-center mb-0 text-secondary">Your Comprehensive Partner for<br><span
-                class="text-primary"><em>Surgical and Nephrology Product Distribution</em></span></h1>
-    </div>
-</section>   -->
+<section class="video-hero">
+  <video class="video-hero-media" autoplay muted loop playsinline>
+    <source src="/videos/TBC-intro-video.mp4" type="video/mp4">
+  </video>
+  <div class="video-hero-overlay">
+    <p class="video-hero-tagline">Trusted healthcare distribution partner for surgical and nephrology care.</p>
+  </div>
+</section>
 
-<section class="banner py-5 d-flex align-items-center">
+<section class="home-intro py-5">
+  <div class="container text-center">
+    <h1 class="display-6 text-primary mb-3">Empowering Hospitals & Clinics with Trusted Surgical and Nephrology Solutions</h1>
+    <p class="lead mb-4">
+      From dialysis kits to advanced surgical care consumables, The business centre delivers reliable, customizable and cost-efficient medical products right when you need them.
+    </p>
+    <a href="/products/tbc-products" class="btn btn-tertiary-outline btn-lg">Explore Products</a>
+  </div>
+</section>
+
+<section class="featured-tbc py-5">
   <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Left Content -->
-      <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
-        <h1 class="display-5 fw-bold text-primary mb-3">
-          Empowering Hospitals & Clinics with <em>Trusted Surgical and Nephrology Solutions</em>
-        </h1>
-        <p class="lead text-dark mb-4">
-          From dialysis kits to advanced surgical care consumables, The business centre delivers reliable, customizable, and cost-efficient medical products—right when you need them.
-        </p>
-        <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-md-start">
-          <a href="/enquiry" class="btn btn-tertiary btn-lg">Get a Quote</a>
-          <a href="/products/tbc-products" class="btn btn-tertiary-outline btn-lg">Explore Products</a>
+    <h2 class="text-center section-heading mb-4">Featured TBC Products</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card brand-card h-100 p-3">
+          <img src="/images/TBC-Products/dialysis-kit.png" alt="TBC Dialysis Kit" class="home-feature-img mb-3">
+          <h5 class="brand-highlight">TBC Dialysis Kit</h5>
+          <p>A complete, customizable dialysis kit sourced for quality, availability, and fast regional delivery.</p>
+          <a href="/products/tbc-products/#tbc-dialysis-kit" class="btn btn-tertiary mt-auto">View Product</a>
         </div>
       </div>
-      
-      <!-- Right Video -->
       <div class="col-md-6">
-        <video class="w-100 rounded shadow" controls autoplay muted="false">
-          <source src="/videos/TBC-intro-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="card brand-card h-100 p-3">
+          <img src="/images/TBC-Products/Dressing-KIT-wrapper.jpg" alt="TBC Dressing Kit" class="home-feature-img mb-3">
+          <h5 class="brand-highlight">TBC Dressing Kit</h5>
+          <p>Sterile, ready-to-use dressing kits tailored for wound care, post-op use, and clinical workflows.</p>
+          <a href="/products/tbc-products/#tbc-dressing-kit" class="btn btn-tertiary mt-auto">View Product</a>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
 
-
-<!-- about timeline -->
-
-<section class="about-timeline py-5">
-    <div class="container">
-        <h1 class="text-center section-heading mb-3">About The business centre</h1>
-        <h2 class="text-center mb-5 fst-italic">The story of our evolution</h2>
-        <div class="timeline position-relative">
-            <div class="row mb-5">
-                <div class="col-md-5 ms-auto right position-relative">
-                    <div class="timeline-content">
-                        <h2>1996</h2>
-                        <p>Established as Authorised Channel partner for M/s. Johnson & Johnson - Medical, we were able
-                            to expand our services to Major Institutions and Leading Nursing Homes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-md-5 me-auto left position-relative">
-                    <div class="timeline-content">
-                        <h2>2001</h2>
-                        <p>Started handling the CAPD Products of M/s. Baxter (India) Pvt. Ltd (Currently vantive), servicing about 150
-                            Dialysis Patients and all Major Renal Centers in Chennai.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-md-5 ms-auto right position-relative">
-                    <div class="timeline-content">
-                        <h2>2010</h2>
-                        <p>Our company advertisement was showcased in Cardio Vascular surgeon conference's magazine
-                            published by Government Hospital, Chennai.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-md-5 me-auto left position-relative">
-                    <div class="timeline-content">
-                        <h2>2013</h2>
-                        <p>Marketed a new landmark to our products range to start marketing & sales of Fresenius Medical care - Dialysis Machines / spares & Consumbles.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-md-5 ms-auto right position-relative">
-                    <div class="timeline-content">
-                        <h2>2016</h2>
-                        <p>Expanded South Tamilnadu, India operation to our Madurai warehouse with dedicated Sales Team
-                            & Admin staff.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5">
-                <div class="col-md-5 me-auto left position-relative">
-                    <div class="timeline-content">
-                        <h2>CSR</h2>
-                        <p>Our company jointly conducted Nursing and Operation Theater programs based on skills
-                            developments, advanced sterilization techniques.</p>
-                    </div>
-                </div>
-            </div>
+<section class="equipment-showcase py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5">
+        <h2 class="section-heading mb-3">Medical Equipment That Builds Trust</h2>
+        <p class="mb-0">A simple visual cue for the kinds of dialysis and surgical systems we support across hospitals and care centres.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-7">
+            <img src="/images/Hemodialysis_Machine/5008S-ai.png" alt="Dialysis equipment" class="equip-large">
+          </div>
+          <div class="col-md-5 d-flex flex-column gap-3">
+            <img src="/images/TBC-Products/dialysis-kit.png" alt="Dialysis kit" class="equip-small">
+            <img src="/images/Jhonson/ethicon_sutures.png" alt="Surgical equipment" class="equip-small">
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
-<!-- brands section -->
+
 <section class="brands-section py-5">
-    <div class="container">
-        <h1 class="text-center section-heading mb-3">Our Products</h1>
+  <div class="container">
+    <h2 class="text-center section-heading mb-4">Our Product Categories</h2>
+    <div class="row justify-content-around">
+      {{ range (index .Site.Taxonomies.tags "products").Pages }}
+      {{ $cardImage := "" }}
+      {{ if eq .Title "The business centre Products" }}
+      {{ $cardImage = "/images/TBC-Products/dialysis-kit.png" }}
+      {{ else if eq .Title "Hemodialysis HD" }}
+      {{ $cardImage = "/images/Hemodialysis_Machine/5008S-ai.png" }}
+      {{ else if eq .Title "Vantive Baxter (Kidney Care)" }}
+      {{ $cardImage = "/images/Baxter/prismax.png" }}
+      {{ else if eq .Title "Surgicals" }}
+      {{ $cardImage = "/images/Jhonson/ethicon_sutures.png" }}
+      {{ else }}
+      {{ $cardImage = "/images/TBC-logo.png" }}
+      {{ end }}
 
-        <div class="row justify-content-around">
-            {{ range (index .Site.Taxonomies.tags "products").Pages }}
-            
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card brand-card p-3 text-center">
-                    <!-- <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo"> -->
-                    <h5 class="card-title brand-highlight">{{ .Title }}</h5>
-                    <div class="card-body">
-                        <p class="card-text">{{ .Params.description }}</p>
-                        <!-- <div class="d-flex justify-content-center">
-                            <a href="{{ .Params.website }}" target="_blank" rel="noopener" class="btn btn-tertiary">Read
-                                more</a>
-                        </div> -->
-                    </div>
-                </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card brand-card p-3 text-center h-100">
+          <img src="{{ $cardImage }}" alt="{{ .Title }}" class="home-cat-img mb-3">
+          <h5 class="card-title brand-highlight">{{ .Title }}</h5>
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">{{ .Params.description }}</p>
+            <div class="d-flex justify-content-center mt-auto">
+              <a href="{{ .RelPermalink }}" class="btn btn-tertiary">View Products</a>
             </div>
-            {{ end }}
+          </div>
         </div>
+      </div>
+      {{ end }}
     </div>
+  </div>
 </section>
 
-<!-- Why Us Section -->
-<section class="why-us text-dark py-5">
-    <div class="container">
-        <h1 class="text-center section-heading mb-3">Why us?</h1>
-        <div class="row">
-            <div class="col-md-7 mx-auto">
-                <ul class="list-unstyled">
-                    <li class="d-flex align-items-center justify-content-start mb-3">
-                        <i class="fas fa-check-circle me-3"></i>
-                        Quicker access of Surgicals & Consumables to Hospitals, nursing homes, dialysis treatment centres
-                    </li>
-                    <li class="d-flex align-items-center justify-content-start mb-3">
-                        <i class="fas fa-check-circle me-3"></i>
-                        Faster connection from regional Madurai branch offices to South, Tamil Nadu.
-                    </li>
-                    <li class="d-flex align-items-center justify-content-start mb-3">
-                        <i class="fas fa-check-circle me-3"></i>
-                        Professional approach to logistics of products with SMS Facility and SAP ERP.
-                    </li>
-                    <li class="d-flex align-items-center justify-content-start mb-3">
-                        <i class="fas fa-check-circle me-3"></i>
-                        Direct connection with customer.
-                    </li>
-                </ul>
-            </div>
+<section class="why-us py-5">
+  <div class="container">
+    <h2 class="text-center section-heading mb-4">Why Us</h2>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-3">
+        <div class="why-card p-3 h-100">
+          <i class="fas fa-clinic-medical mb-2"></i>
+          <p class="mb-0">Quicker access of surgicals and consumables to hospitals, nursing homes, and dialysis centers.</p>
         </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="why-card p-3 h-100">
+          <i class="fas fa-shipping-fast mb-2"></i>
+          <p class="mb-0">Faster delivery support through our regional Madurai operations across South Tamil Nadu.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="why-card p-3 h-100">
+          <i class="fas fa-clipboard-check mb-2"></i>
+          <p class="mb-0">Professional logistics with SMS updates and SAP ERP-backed process reliability.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="why-card p-3 h-100">
+          <i class="fas fa-headset mb-2"></i>
+          <p class="mb-0">Direct, responsive communication for procurement and service support teams.</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Milestones Section -->
-<!-- <section class="milestones py-5 text-center">
-    <div class="container">
-        <h1 class="text-center section-heading mb-3">Our milestones</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="milestone">
-                    <i class="fas fa-rocket"></i>
-                    <h3 class="counter" data-target="4">0</h3>
-                    <p>Brands</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="milestone">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3 class="counter" data-target="21">0</h3>
-                    <p>Products</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="milestone">
-                    <i class="fas fa-home"></i>
-                    <h3 class="counter" data-target="30">0</h3>
-                    <p>Major Institutions</p>
-                </div>
-            </div>
+<section class="testimonials py-5">
+  <div class="container">
+    <h2 class="text-center section-heading mb-4">Testimonials</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card p-4 h-100">
+          <p class="mb-3">"TBC consistently delivers on-time and helps us plan dialysis consumables without stock pressure."</p>
+          <h6 class="mb-0">Procurement Team</h6>
+          <small>Renal Care Hospital, Chennai</small>
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card p-4 h-100">
+          <p class="mb-3">"Their team understands urgent OT requirements and supports us with dependable surgical supply."</p>
+          <h6 class="mb-0">Senior Nursing Superintendent</h6>
+          <small>Multi-speciality Centre</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card p-4 h-100">
+          <p class="mb-3">"Reliable product quality, responsive service, and practical customization for our dialysis workflow."</p>
+          <h6 class="mb-0">Clinical Administrator</h6>
+          <small>Dialysis Unit, Madurai</small>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-<script>
-    // Counter animation function
-    document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.counter');
-        let hasAnimated = false;
 
-        const startCounting = () => {
-            counters.forEach(counter => {
-                const updateCounter = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-
-                    const increment = target / 200;
-
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCounter, 10);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-
-                updateCounter();
-            });
-        };
-
-        // Using IntersectionObserver to detect when the section is in view
-        const milestonesSection = document.querySelector('.milestones'); // Correctly target the milestones section
-
-        if (milestonesSection) {  // Check if the section exists before observing
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !hasAnimated) {
-                        startCounting();
-                        hasAnimated = true; // Ensure the counting only happens once
-                        observer.unobserve(entry.target); // Optional: Stop observing after animation
-                    }
-                });
-            }, {
-                threshold: 0.5 // Adjust this value as needed
-            });
-
-            observer.observe(milestonesSection); // Observe the section
-        } else {
-            console.error("Milestones section not found!");
-        }
-    });
-</script> -->
+<section class="customers py-5">
+  <div class="container">
+    <h2 class="text-center section-heading mb-4">Major Hospitals We Serve</h2>
+    <div id="customersCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>AH</span><small>Apollo Hospitals</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>KM</span><small>Kauvery Hospital</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>FM</span><small>Fortis Malar</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>MM</span><small>Meenakshi Mission</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>MI</span><small>MIOT International</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>RM</span><small>Rela Hospital</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>GH</span><small>Global Health City</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>CMC</span><small>CMC Vellore</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>MGM</span><small>MGM Healthcare</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>SIMS</span><small>SIMS Hospital</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>PSG</span><small>PSG Hospitals</small></div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="hospital-logo-tile"><span>SRM</span><small>SRM Medical College</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#customersCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#customersCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
 
 {{ end }}

@@ -22,7 +22,7 @@ draft: false
 
 <!-- ### Product Description -->
 
-**Continuous Ambulatory Peritoneal Dialysis (CAPD)** by Vantive (Baxter) is a form of peritoneal dialysis that allows patients to perform their own dialysis treatments manually throughout the day, without the need for a machine. This portable and flexible treatment option involves using the patient’s peritoneum as a natural filter to remove waste and excess fluid from the blood. Baxter’s CAPD system provides patients with the necessary supplies, including sterile dialysis solution bags and a catheter, to manage their treatment effectively at home or on the go.
+**Continuous Ambulatory Peritoneal Dialysis (CAPD)** by Vantive Baxter is a form of peritoneal dialysis that allows patients to perform their own dialysis treatments manually throughout the day, without the need for a machine. This portable and flexible treatment option involves using the patient’s peritoneum as a natural filter to remove waste and excess fluid from the blood. Baxter’s CAPD system provides patients with the necessary supplies, including sterile dialysis solution bags and a catheter, to manage their treatment effectively at home or on the go.
 
 <!-- ### Key Features
 

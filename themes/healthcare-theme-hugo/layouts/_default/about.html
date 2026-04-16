@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container my-5 py-5">
+  <section class="about-timeline py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fst-italic">The story of our evolution</h2>
+      <div class="timeline position-relative">
+        {{ range $index, $item := .Params.timeline }}
+        <div class="row mb-5">
+          <div class="col-md-5 {{ if eq (mod $index 2) 0 }}ms-auto right{{ else }}me-auto left{{ end }} position-relative">
+            <div class="timeline-content">
+              <h2>{{ $item.year }}</h2>
+              <p>{{ $item.description }}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 me-auto">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="management-section my-5">
+    <h2 class="mb-4">Our Management</h2>
+    {{ range .Params.management }}
+    <div class="row align-items-center mb-5">
+      <div class="col-md-8">
+        <h3>{{ .name }} - <em>{{ .role }}</em></h3>
+        <p>{{ .about }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </section>
+</div>
+{{ end }}

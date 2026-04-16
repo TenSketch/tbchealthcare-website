@@ -7,11 +7,110 @@
     {{ partial "header.html" . }}
   <main>
     {{ block "main" . }}{{ end }}
-    <!-- WhatsApp Chat Icon -->
-<a href="https://wa.me/919841289420" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <img src="/images/whatsapp-icon.png" alt="WhatsApp Chat" class="whatsapp-icon">
-</a>
+
+    <div class="quick-actions" aria-label="Quick contact actions">
+      <div id="quickActionMenu" class="quick-action-menu">
+        <a href="tel:+919841289420" class="quick-action-btn quick-phone" aria-label="Call us">
+          <img src="/images/phone-icon.svg" alt="Phone">
+        </a>
+        <a href="https://wa.me/919841289420?text=Hello%20The%20Business%20Centre%2C%20I%20have%20a%20general%20enquiry."
+          target="_blank" rel="noopener" class="quick-action-btn quick-whatsapp"
+          aria-label="General enquiry on WhatsApp">
+          <img src="/images/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+        <button id="openChatForm" class="quick-action-btn quick-form" type="button"
+          aria-label="Open quick contact form">
+          <img src="/images/form-icon.svg" alt="Form">
+        </button>
+      </div>
+        <button id="toggleQuickActions" class="quick-action-btn quick-chat" type="button"
+        aria-label="Open quick actions">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div id="chatFormPopup" class="chat-form-popup" aria-hidden="true">
+      <div class="chat-form-card">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="mb-0">Quick Contact</h5>
+          <button id="closeChatForm" type="button" class="chat-close-btn" aria-label="Close quick contact form">&times;</button>
+        </div>
+        <form name="quick-chat" id="quickChatForm" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true">
+          <input type="hidden" name="form-name" value="quick-chat">
+          <div class="mb-2">
+            <label for="quickName" class="form-label">Name</label>
+            <input id="quickName" name="Name" type="text" class="form-control" required>
+          </div>
+          <div class="mb-2">
+            <label for="quickMobile" class="form-label">Mobile</label>
+            <input id="quickMobile" name="Mobile" type="tel" class="form-control" pattern="^[0-9]{10}$"
+              minlength="10" maxlength="10" inputmode="numeric"
+              oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)" required>
+          </div>
+          <div class="mb-3">
+            <label for="quickMessage" class="form-label">Message</label>
+            <textarea id="quickMessage" name="Message" class="form-control" rows="3" required></textarea>
+          </div>
+          <div class="mb-3" data-netlify-recaptcha="true"></div>
+          <button type="submit" class="btn btn-tertiary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
   </main>
     {{ partial "footer.html" . }}
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const menu = document.getElementById('quickActionMenu');
+        const toggleBtn = document.getElementById('toggleQuickActions');
+        const openBtn = document.getElementById('openChatForm');
+        const closeBtn = document.getElementById('closeChatForm');
+        const popup = document.getElementById('chatFormPopup');
+        const quickChatForm = document.getElementById('quickChatForm');
+
+        if (!menu || !toggleBtn || !openBtn || !closeBtn || !popup || !quickChatForm) return;
+
+        toggleBtn.addEventListener('click', function () {
+          menu.classList.toggle('active');
+        });
+
+        openBtn.addEventListener('click', function () {
+          popup.classList.add('active');
+          popup.setAttribute('aria-hidden', 'false');
+          menu.classList.remove('active');
+        });
+
+        closeBtn.addEventListener('click', function () {
+          popup.classList.remove('active');
+          popup.setAttribute('aria-hidden', 'true');
+        });
+
+        quickChatForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+          const formData = new FormData(quickChatForm);
+          const userMessage = formData.get('Message') || 'I have a general enquiry.';
+          const whatsappText = encodeURIComponent('Hello The Business Centre, ' + userMessage);
+          const whatsappUrl = 'https://wa.me/919841289420?text=' + whatsappText;
+
+          fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+          }).finally(function () {
+            window.location.href = whatsappUrl;
+          });
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
+            menu.classList.remove('active');
+          }
+          if (popup.classList.contains('active')) {
+            if (popup.contains(event.target) || openBtn.contains(event.target)) return;
+            popup.classList.remove('active');
+            popup.setAttribute('aria-hidden', 'true');
+          }
+        });
+      });
+    </script>
 </body>
 </html>

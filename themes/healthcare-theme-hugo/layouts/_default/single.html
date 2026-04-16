@@ -1,78 +1,60 @@
 {{ define "main" }}
 <div class="container my-5 py-5">
-  {{ $dateHuman := now.Format "January 2, 2006" }}
-  {{ $dateMachine := now.Format "2006-01-02T15:04:05-07:00" }}
-  <p class="text-end"><strong>Today:</strong> <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></p>
-
-  <!-- about-us page -->
-  {{ if eq .Params.layout "about" }}
-  <section class="mission">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 me-auto">
-          {{ .Content }}
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="management-section my-5">
-    <h2 class="mb-4">Our Management</h2>
-
-    {{ range .Params.management }}
-    <div class="row align-items-center mb-5">
-      <!-- <div class="col-md-4">
-        <img src="{{ .img }}" class="img-fluid rounded" alt="{{ .name }}">
-      </div> -->
-      <div class="col-md-8">
-        <h3>{{ .name }} - <em>{{ .role }}</em></h3>
-        <p>{{ .about }}</p>
-      </div>
-    </div>
-    {{ end }}
-
-  </section>
-  {{ end }}
-
   <!-- contact-us page -->
   {{ if eq .Params.layout "contact" }}
   <section class="contact-form">
-    <h1 class="text-center mb-5">{{ .Params.sectionTitle }}</h1>
-    <div class="row justify-content-between">
-      <div class="col-md-5">
-        <!-- <h5 class="mb-4"> {{ .Content }}</h5> -->
-        <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
+    <h1 class="text-center mb-4">{{ .Params.sectionTitle }}</h1>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-5">
+        <div class="card brand-card p-4 h-100">
+          <h4 class="mb-2">Head Office</h4>
+          <address class="mb-4">
+            <strong>{{ .Site.Data.contact_info.company_name }}</strong><br>
+            {{ .Site.Data.contact_info.head_office.address_line1 }}<br>
+            {{ .Site.Data.contact_info.head_office.address_line2 }}<br>
+            {{ .Site.Data.contact_info.head_office.city }} - {{ .Site.Data.contact_info.head_office.postal_code }}<br>
+            {{ .Site.Data.contact_info.head_office.state }}, {{ .Site.Data.contact_info.head_office.country }}
+          </address>
+
+          <h4 class="mb-3">Branch Office</h4>
+          <address class="mb-0">
+            {{ .Site.Data.contact_info.branch_office.address_line1 }}<br>
+            {{ .Site.Data.contact_info.branch_office.address_line2 }}<br>
+            {{ .Site.Data.contact_info.branch_office.city }} - {{ .Site.Data.contact_info.branch_office.postal_code }}
+          </address>
+        </div>
       </div>
-      <div class="col-md-6 mt-5 mt-md-0">
-        <form name="contact" action="/thank-you" method="POST" netlify>
 
-          <!-- Name -->
+      <div class="col-lg-3">
+        <div class="card brand-card p-4 h-100">
+          <h4 class="mb-2">Contact</h4>
+          <p class="mb-3">
+            <a class="text-warning" href="mailto:{{ .Site.Data.contact_info.email }}">
+              <i class="fa fa-envelope" aria-hidden="true"></i> {{ .Site.Data.contact_info.email }}
+            </a>
+          </p>
+          {{ range $category, $details := .Site.Data.contact_info.contact_numbers }}
           <div class="mb-3">
-            <label for="Name" class="form-label">Name <span class="required-star">*</span></label>
-            <input type="text" class="form-control" id="Name" name="Name" required>
+            <p class="mb-1 fw-semibold">{{ $details.label }}</p>
+            <ul class="list-unstyled mb-0">
+              {{ range $details.numbers }}
+              <li><a href="tel:{{ . }}">{{ . }}</a></li>
+              {{ end }}
+            </ul>
           </div>
+          {{ end }}
+        </div>
+      </div>
 
-          <!-- Mobile Number -->
-          <div class="mb-3">
-            <label for="mobile" class="form-label">Contact Number <span class="required-star">*</span></label>
-            <input type="tel" class="form-control" id="mobile" name="Mobile" aria-label="mobile"
-              pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number with country code (e.g. +91 9876543210)"
-              autocomplete="tel" required>
+      <div class="col-lg-4">
+        <div class="card brand-card p-3 h-100">
+          <h4 class="mb-2 px-2">Map</h4>
+          <div class="ratio ratio-1x1">
+            <iframe title="The Business Centre Location in Chennai"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8607830253013!2d80.20412881420137!3d13.044532216804631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266dcdc5b647b%3A0x39cefc6021300b66!2sThe+Business+centre!5e0!3m2!1sen!2sin!4v1513919132506"
+              style="border:0;" allowfullscreen loading="lazy"></iframe>
           </div>
-
-          <!-- Email -->
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="Email">
-          </div>
-
-          <!-- Message -->
-          <div class="mb-3">
-            <label for="message" class="form-label">Message <span class="required-star">*</span></label>
-            <textarea class="form-control" id="message" name="Message" rows="4" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-tertiary w-100">Send</button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
@@ -81,186 +63,142 @@
   {{ if eq .Params.layout "enquiry" }}
   <section class="enquiry-form">
     <h1 class="text-center mb-5">{{ .Params.sectionTitle }}</h1>
-
-    <!-- <div class="row justify-content-between align-items-center my-5 mx-2">
-      {{ range sort .Site.Taxonomies.tags.products.Pages "Weight" }}
-      <div class="col-md-3 card brand-card p-3 my-3 my-md-0 text-center">
-  <h3 class="brand-highlight">{{ .Title }}</h3>
-
-        <img src="{{ .Params.image }}" alt="{{ .Title }} Logo" class="card-img-top brand-logo">
-        <div class="card-body">
-          <h5 class="card-title">{{ .Title }}</h5>
-          <p class="card-text">{{ .Params.description }}</p>
-          <div class="d-flex justify-content-center">
-            <a href="{{ .Permalink }}" class="btn btn-tertiary">Read more</a>
-          </div>
+    <div class="row justify-content-center g-4 pt-2">
+      <div class="col-lg-4 col-md-5">
+        <div class="card brand-card p-3 h-100">
+          <img class="img-fluid rounded mb-3" src="{{ .Params.image }}" alt="{{ .Title }}">
+          <p class="mb-0">{{ .Content }}</p>
         </div>
       </div>
-      {{ end }}
-    </div> -->
-    <div class="row justify-content-between pt-5">
-      <div class="col-md-5">
-        <h5 class="mb-4"> {{ .Content }}</h5>
-        <img class="neumorphism" src="{{ .Params.image }}" alt="{{ .Title }}">
-      </div>
-      <div class="col-md-6">
-        <style>
-          .required-star {
-            color: red;
-          }
-        </style>
+      <div class="col-lg-7 col-md-7">
+        <div class="card brand-card p-4">
+          <form name="enquiry" id="enquiryForm" method="POST" netlify data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="enquiry">
+            <input type="hidden" name="Category" id="productCategory">
 
-        <form name="enquiry" action="/thank-you" method="POST" netlify>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="enqName" class="form-label">Name <span class="required-star">*</span></label>
+                <input type="text" class="form-control" id="enqName" name="Name" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="enqMobile" class="form-label">Mobile <span class="required-star">*</span></label>
+                <input type="tel" class="form-control" id="enqMobile" name="Mobile" placeholder="10-digit mobile"
+                  pattern="^[0-9]{10}$" minlength="10" maxlength="10" inputmode="numeric"
+                  oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)" required>
+              </div>
 
-          <!-- Name -->
-          <div class="mb-3">
-            <label for="Name" class="form-label">Name <span class="required-star">*</span></label>
-            <input type="text" class="form-control" id="Name" name="Name" placeholder="Your name" autocomplete="off"
-              required>
-          </div>
+              <div class="col-12">
+                <label for="enqProduct" class="form-label">Product <span class="required-star">*</span></label>
+                <input type="text" class="form-control" id="enqProduct" name="Product" list="enquiryProductList"
+                  placeholder="Start typing product name..." autocomplete="off" required>
+                <datalist id="enquiryProductList">
+                  {{ range .Site.Data.enquiry_products.products }}
+                  <option value="{{ .name }}">{{ .name }} ({{ .category }})</option>
+                  {{ end }}
+                </datalist>
+              </div>
 
-          <!-- Phone -->
-          <div class="mb-3">
-            <label for="mobile" class="form-label">Contact Number <span class="required-star">*</span></label>
-            <input type="tel" class="form-control" id="mobile" name="Mobile" placeholder="e.g. +91 9876543210"
-              pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number with country code" autocomplete="tel"
-              required>
+              <div class="col-12">
+                <label for="enqAddress" class="form-label">Address <span class="required-star">*</span></label>
+                <input type="text" class="form-control" id="enqAddress" name="Address"
+                  placeholder="Street, Area, City, State, Pincode" required>
+                <div class="form-text">Tip: entering 6-digit pincode helps auto-suggest city/state.</div>
+              </div>
 
-          </div>
+              <div class="col-12">
+                <label for="enqMessage" class="form-label">Message (Optional)</label>
+                <textarea class="form-control" id="enqMessage" name="Message" rows="3"
+                  placeholder="Additional requirement details"></textarea>
+              </div>
 
-          <!-- Email -->
-          <div class="mb-3">
-            <label for="email" class="form-label">Email <span class="required-star">*</span></label>
-            <input type="email" class="form-control" id="email" name="Email" placeholder="abc@somemail.com"
-              autocomplete="off" required>
-          </div>
+              <div class="col-12" data-netlify-recaptcha="true"></div>
 
-          <!-- Simple Address (single field, optional) -->
-          <div class="mb-3">
-            <label for="address" class="form-label">Address (Optional)</label>
-            <input type="text" class="form-control" id="address" name="Address"
-              placeholder="Door/Street, City – Pincode">
-            <div class="form-text">Just a rough location is fine. We’ll confirm on call.</div>
-          </div>
-
-          <!-- Brand (required) -->
-          <!-- <div class="mb-3">
-            <label for="brand" class="form-label">Brand / Category <span class="required-star">*</span></label>
-            <select class="form-select" id="brand" name="Brand" required>
-              <option value="">Select one</option>
-              <option value="Baxter">Baxter</option>
-              <option value="Fresenius">Hemodialysis</option>
-              <option value="Johnson">Johnson & Johnson</option>
-              <option value="Schulke">Schulke</option>
-              <option value="Accessories">Accessories</option>
-            </select>
-          </div> -->
-
-          <!-- Product (required) — script fills options -->
-          <!-- <div class="mb-3">
-            <label for="products" class="form-label">Product <span class="required-star">*</span></label>
-            <select class="form-select" id="products" name="Product" required>
-              <option value="" disabled selected>Select brand/category first to view products</option>
-            </select>
-          </div> -->
-
-          <!-- Brand / Category -->
-          <div class="mb-3">
-            <label for="brand" class="form-label">Brand / Category <span class="required-star">*</span></label>
-            <input type="text" class="form-control" id="brand" name="Brand"
-              placeholder="e.g. Baxter, Hemodialysis, Schulke..." required>
-          </div>
-
-          <!-- Product -->
-          <div class="mb-3">
-            <label for="products" class="form-label">Product <span class="required-star">*</span></label>
-            <input type="text" class="form-control" id="products" name="Product"
-              placeholder="e.g. Dialysis Kit, AVF Needle..." required>
-          </div>
-
-
-          <!-- Quantity -->
-          <div class="mb-3">
-            <label for="quantity" class="form-label">Quantity <span class="required-star">*</span></label>
-            <input type="number" class="form-control" id="quantity" name="Quantity" min="1" max="999" step="1"
-              placeholder="10" required>
-          </div>
-
-
-          <!-- Message -->
-          <div class="mb-3">
-            <label for="message" class="form-label">Message (Optional)</label>
-            <textarea class="form-control" id="message" name="Message" rows="3"
-              placeholder="Your requirement brief.."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-tertiary w-100">Send Enquiry</button>
-        </form>
-
+              <div class="col-12">
+                <button type="submit" class="btn btn-tertiary">Send Enquiry</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
-  <!-- <script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Products based on brand selection
-      const productsByBrand = {
-        'Baxter': ['Continuous Ambulatory Peritoneal Dialysis (CAPD)'],
-        'Fresenius': [
-          '4008A Hemodialysis Machine',
-          '4008S Next Generation Hemodialysis Machine',
-          '5008S Hemodialysis Machine',
-          'AquaB Central Reverse Osmosis Water Treatment System',
-          'AquaWTU Compact Water Treatment System',
-          'Bibag® – Dry Bicarbonate Concentrate',
-          'Blood Tubing',
-          'FX-class High-Flux Dialysers and Haemofilters',
-          'PlasmaFlux® PSu filters - P1dry/P2dry'
-        ],
-        'Johnson': [
-          'CIDEX SOLUTION',
-          'ETHICON SUTURES',
-          'ETHICON CUTTER',
-          'Proximate Skin Staplers',
-          'ETHICON PROLENE MESH'
-        ],
-        'Schulke': [
-          'MICROSHIELD® 4 Chlorhexidine Surgical Handwash',
-          'Microshield® 2 Chlorhexidine Skin Cleanser',
-          'MICROSHIELD® Handrub Solution',
-          'Microshield® Blue Handrub',
-          'Microshield® Ioprep',
-          'MICROSHIELD® Tincture',
-          'Microshield® PVP-S',
-          'Microshield® PVP Povidone-Iodine Surgical Handwash'
-        ],
-        'Accessories': [
-          'CATHETER -MAHURKHAR',
-          'MULTILUMEN CATHETER',
-          'AVF NEEDLE',
-          'TRANSDUCER PROTECTOR',
-          'Dressing Kit',
-          'Maxid chronic catheter',
-          'Tal Palindrome chronic catheter'
-        ]
-      };
+      const form = document.getElementById('enquiryForm');
+      if (!form) return;
 
-      const brandSelect = document.getElementById('brand');
-      const productsSelect = document.getElementById('products');
+      const productInput = document.getElementById('enqProduct');
+      const categoryInput = document.getElementById('productCategory');
+      const addressInput = document.getElementById('enqAddress');
 
-      brandSelect.addEventListener('change', function () {
-        const selectedBrand = brandSelect.value;
-        const products = productsByBrand[selectedBrand] || [];
-        productsSelect.innerHTML = ''; // Clear existing options
+      const products = {{ .Site.Data.enquiry_products.products | jsonify | safeJS }};
 
-        products.forEach(function (product) {
-          const option = document.createElement('option');
-          option.value = product;
-          option.text = product;
-          productsSelect.appendChild(option);
+      function setProductCategory() {
+        const selected = products.find(function (item) {
+          return item.name.toLowerCase() === productInput.value.trim().toLowerCase();
+        });
+        categoryInput.value = selected ? selected.category : '';
+      }
+
+      async function enrichAddressByPincode() {
+        const match = addressInput.value.match(/\b(\d{6})\b/);
+        if (!match) return;
+        const pin = match[1];
+        try {
+          const response = await fetch('https://api.postalpincode.in/pincode/' + pin);
+          const data = await response.json();
+          if (!data || !data[0] || data[0].Status !== 'Success' || !data[0].PostOffice || !data[0].PostOffice[0]) return;
+          const place = data[0].PostOffice[0];
+          const city = place.District || '';
+          const state = place.State || '';
+          const current = addressInput.value;
+          if (city && state && !current.toLowerCase().includes(city.toLowerCase()) && !current.toLowerCase().includes(state.toLowerCase())) {
+            addressInput.value = current + ', ' + city + ', ' + state;
+          }
+        } catch (err) {
+          console.warn('Pincode lookup failed', err);
+        }
+      }
+
+      if (window.google && window.google.maps && window.google.maps.places) {
+        new google.maps.places.Autocomplete(addressInput, { types: ['geocode'] });
+      }
+
+      productInput.addEventListener('change', setProductCategory);
+      productInput.addEventListener('blur', setProductCategory);
+      addressInput.addEventListener('blur', enrichAddressByPincode);
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        setProductCategory();
+        if (!categoryInput.value) categoryInput.value = 'General';
+
+        const formData = new FormData(form);
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        }).finally(function () {
+          const name = formData.get('Name') || '';
+          const mobile = formData.get('Mobile') || '';
+          const product = formData.get('Product') || '';
+          const address = formData.get('Address') || '';
+          const note = formData.get('Message') || '';
+          const msg = [
+            'Hello The Business Centre, I have an enquiry.',
+            'Name: ' + name,
+            'Mobile: ' + mobile,
+            'Product: ' + product,
+            'Address: ' + address,
+            note ? 'Message: ' + note : ''
+          ].filter(Boolean).join('\n');
+          window.location.href = 'https://wa.me/919841289420?text=' + encodeURIComponent(msg);
         });
       });
     });
-  </script> -->
+  </script>
   {{ end }}
 
   <!-- thank-you page -->
