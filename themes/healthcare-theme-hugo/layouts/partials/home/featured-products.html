@@ -1,0 +1,25 @@
+{{ with .Params.featured_products }}
+<section class="d-flex align-items-center">
+  <div class="container py-5">
+    <h2 class="section-heading mb-5 text-center">Featured TBC Products</h2>
+    <div class="row  align-items-center justify-content-around mb-5 shadow-sm">
+      {{ range . }}
+      <div class="col-md-5 p-4 p-md-1">
+        <div class="row align-items-center text-center text-md-start border rounded-3 p-3 h-100 shadow-sm">
+          <div class="col-md-8">
+            <img src="{{ .image }}" alt="{{ .title }}" class="featured-product-img img-fluid rounded-3">
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center gap-3 mt-3 mt-md-0">
+            <h3 class="fw-semibold mb-0 text-primary">{{ .title }}</h3>
+            <p class="mb-0 text-secondary">{{ .description }}</p>
+            <div>
+              <a href="{{ .link }}" class="btn btn-tertiary">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,10 @@
+{{ with .Params.video_tagline }}
+<section class="video-hero">
+  <video class="video-hero-media" autoplay muted loop playsinline>
+    <source src="/videos/TBC-intro-video.mp4" type="video/mp4">
+  </video>
+  <div class="video-hero-overlay">
+    <p class="video-hero-tagline">{{ . }}</p>
+  </div>
+</section>
+{{ end }}

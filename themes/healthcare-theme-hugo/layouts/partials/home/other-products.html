@@ -1,0 +1,32 @@
+{{ with .Params.other_products_title }}
+{{ $page := $ }}
+{{ $categoryImages := $.Site.Data.category_images.categories }}
+{{ $defaultImage := $.Site.Data.category_images.default_image }}
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center section-heading mb-5">{{ . }}</h2>
+    <div class="row justify-content-center g-4">
+      {{ range (index $.Site.Taxonomies.tags "products").Pages }}
+      {{ if not (in .RelPermalink "tbc-products") }}
+      {{ $cardImage := $defaultImage }}
+      {{ with index $categoryImages .Title }}
+        {{ $cardImage = .image }}
+      {{ end }}
+      <div class="col-lg-3 col-md-6">
+        <div class="card brand-card rounded-3 p-3 text-center h-100">
+          <img src="{{ $cardImage }}" alt="{{ .Title }}" class="home-cat-img rounded-2 mb-3 w-100">
+          <h5 class="card-title brand-highlight">{{ .Title }}</h5>
+          <div class="card-body d-flex flex-column">
+            <p class="card-text">{{ .Params.description }}</p>
+            <div class="d-flex justify-content-center mt-auto">
+              <a href="{{ .RelPermalink }}" class="btn btn-tertiary">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

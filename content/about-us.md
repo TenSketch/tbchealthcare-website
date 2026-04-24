@@ -8,7 +8,7 @@ management:
   - name: "VK. Nesheed Kumar"
     role: "Partner"
     about: "Mr. Nesheed Kumar achieved 2nd place in overall sales for the Chennai region within the first few years of operation. With over 30 years of experience in the medical and healthcare industry, he handles tasks and challenges with professionalism and expertise, bringing a dynamic approach to his work."
-    # img: "/images/Nesheed.jpg"
+    img: "/images/Nesheed.jpg"
   - name: "VK. Vikram"
     role: "Partner"
     about: "Mr. Vikram began his business career at the age of 19, focusing on servicing surgical and nephrology products (kidney failure-related products) valued in the billions."

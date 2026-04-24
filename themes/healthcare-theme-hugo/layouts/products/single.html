@@ -1,37 +1,26 @@
 {{ define "main" }}
-
-<!-- products page -->
-<section class="brand-products-list container my-5">
-  <div class="container my-5">
-    {{ $products := .Resources.Match "*.md" }}
-    {{ range $products }}
-    <div class="row my-5 justify-content-between">
-      <!-- Left: Product Image -->
-      <div class="col-12">
-        <h2 class="text-center my-5">{{ .Title }}</h2>
-      </div>
-      <div class="col-md-5 mb-4 mb-md-0 text-center text-md-start">
-
-        <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid">
-      </div>
-      <!-- Right: Product Info -->
-      <div class="col-md-6">
-        <!-- <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid"> -->
-
-        {{ .Content }}
-       <div class="d-flex align-items-center gap-3 mt-4">
-  <a href="{{ .Params.cta_link }}" class="btn btn-tertiary">Enquire Now</a>
-
-  {{ with .Params.pdf }}
-    <a href="{{ . }}" target="_blank" rel="noopener" class="btn btn-tertiary-outline">
-      View Catalogue
-    </a>
-  {{ end }}
-</div>
-
+<section class="brand-products-list container my-5 py-5">
+  {{ $products := .Resources.Match "*.md" }}
+  {{ range $products }}
+  <div class="row my-5 justify-content-between">
+    <div class="col-12">
+      <h2 class="text-center my-4">{{ .Title }}</h2>
+    </div>
+    <div class="col-md-5 mb-4 mb-md-0 text-center text-md-start">
+      <img src="{{ index .Params.images 0 }}" alt="{{ .Title }} Product Image" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      {{ .Content }}
+      <div class="d-flex align-items-center gap-3 mt-4">
+        <a href="{{ .Params.cta_link }}" class="btn btn-tertiary">Enquire Now</a>
+        {{ with .Params.pdf }}
+        <a href="{{ . }}" target="_blank" rel="noopener" class="btn btn-tertiary-outline">
+          View Catalogue
+        </a>
+        {{ end }}
       </div>
     </div>
-    {{ end }}
   </div>
+  {{ end }}
 </section>
 {{ end }}

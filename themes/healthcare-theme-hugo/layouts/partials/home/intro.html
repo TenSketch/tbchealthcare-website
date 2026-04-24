@@ -1,0 +1,9 @@
+{{ with .Params.intro }}
+<section class="home-intro py-5">
+  <div class="container text-center">
+    <h1 class="display-6 text-primary mb-3">{{ .heading }}</h1>
+    <p class="lead mb-4">{{ .description }}</p>
+    <a href="{{ .cta_link }}" class="btn btn-tertiary-outline btn-lg">{{ .cta_text }}</a>
+  </div>
+</section>
+{{ end }}

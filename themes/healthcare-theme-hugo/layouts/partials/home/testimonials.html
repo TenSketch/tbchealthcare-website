@@ -1,0 +1,18 @@
+{{ with .Params.testimonials }}
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center section-heading mb-5">{{ .title }}</h2>
+    <div class="row g-4">
+      {{ range .items }}
+      <div class="col-md-4">
+        <div class="testimonial-card rounded-3 p-4 h-100">
+          <p class="mb-3 fst-italic">"{{ .quote }}"</p>
+          <h6 class="mb-0">{{ .author }}</h6>
+          <small class="text-secondary">{{ .source }}</small>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

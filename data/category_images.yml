@@ -1,0 +1,10 @@
+# Category image mappings for the Other Products section on homepage
+# Key must match the page title exactly
+categories:
+  "Hemodialysis HD":
+    image: "/images/Hemodialysis_Machine/5008S-ai.png"
+  "Vantive Baxter (Kidney Care)":
+    image: "/images/Baxter/prismax.png"
+  "Surgicals":
+    image: "/images/Jhonson/ethicon_sutures.png"
+default_image: "/images/TBC-logo.png"
